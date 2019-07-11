@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Viktoria Nosick](https://up.htmlacademy.ru/adaptive/17/user/469679).
-* Наставник: [Даниил Царёв] (https://htmlacademy.ru/profile/id945835).
+* Наставник: [Даниил Царёв](https://htmlacademy.ru/profile/id945835).
 
 ---
 
