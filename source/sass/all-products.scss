@@ -1,0 +1,46 @@
+.all-products {
+  width: 280px;
+  padding: 25px 20px;
+  margin: 0 auto;
+  border-top: 1px solid $dark-grey;
+  border-bottom: 1px solid $dark-grey;
+
+  &__plus {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 23px;
+    width: 31px;
+    height: 31px;
+    background: url("../img/icon-plus.svg") no-repeat 0 0;
+    opacity: 0.2;
+  }
+
+  &__show-more {
+    margin: 0;
+    padding-bottom: 6px;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: $black;
+  }
+
+  &__text {
+    margin: 0;
+    padding-bottom: 20px;
+    font-family: "Arial", sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+    color: $light-black;
+  }
+
+  &__show-all {
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: $light-black;
+  }
+
+  &__show-all:focus {
+    opacity: 0.3;
+  }
+}

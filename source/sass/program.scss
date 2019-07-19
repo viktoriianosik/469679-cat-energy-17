@@ -1,0 +1,62 @@
+.program {
+  position: relative;
+  padding: 21px;
+  padding-top: 40px;
+  text-align: left;
+  background-color: $grey;
+
+  &__title {
+    margin: 0;
+    padding-left: 71px;
+    padding-bottom: 33px;
+    font-size: 24px;
+    line-height: 37px;
+    text-transform: uppercase;
+    color: $black;
+  }
+
+  &__text {
+    margin: 0;
+    padding-bottom: 30px;
+    font-family: "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    color: $light-black;
+    border-bottom: 1px solid $dark-grey;
+  }
+
+  &__link {
+    position: relative;
+    display: block;
+    padding-top: 20px;
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: $black;
+  }
+
+  &__link::after {
+    content: "";
+    position: absolute;
+    top: 22px;
+    right: 120px;
+    width: 25px;
+    height: 12px;
+    background: url("../img/icon-right-arrow-long.svg");
+  }
+
+  &__link:focus {
+    opacity: 0.3;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 22px;
+    width: 50px;
+    height: 51px;
+    border-radius: 50%;
+    background-color: $green;
+  }
+}

@@ -1,0 +1,20 @@
+.header {
+  width: 320px;
+  margin: 0 auto;
+  text-align: left;
+
+  &__image {
+    width: 191px;
+    height: 39px;
+    padding-top: 11px;
+    padding-bottom: 15px;
+  }
+
+  &__logo:hover &__image {
+    opacity: 0.8;
+  }
+
+  &__logo:focus &__image {
+    opacity: 0.6;
+  }
+}
