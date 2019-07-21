@@ -16,12 +16,12 @@
     opacity: 0.3;
   }
 
-  &--color {
+  &--show {
     background-color: $grey;
   }
 
-  &--color:hover,
-  &--color:focus {
+  &--show:hover,
+  &--show:focus {
     background-color: $grey-hvr;
   }
 }
