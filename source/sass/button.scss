@@ -1,0 +1,27 @@
+.button {
+  display: block;
+  width: 280px;
+  padding: 11px 0;
+  text-align: center;
+  color: $white;
+  background-color: $green;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $green-hvr;
+  }
+
+  &:focus {
+    opacity: 0.3;
+  }
+
+  &--show {
+    background-color: $grey;
+  }
+
+  &--show:hover,
+  &--show:focus {
+    background-color: $grey-hvr;
+  }
+}

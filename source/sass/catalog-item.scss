@@ -1,0 +1,28 @@
+.catalog-item {
+  width: 280px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 25px;
+  margin: 0 auto;
+  border-top: 1px solid $dark-grey;
+
+  &__name {
+    width: 75px;
+    padding-bottom: 14px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: normal;
+    color: $black;
+  }
+
+  &__image {
+    width: 140px;
+    height: 144px;
+  }
+
+  &__order {
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+}

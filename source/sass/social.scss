@@ -1,0 +1,38 @@
+.social {
+  display: flex;
+  justify-content: center;
+  padding: 25px 0;
+  list-style: none;
+  border-bottom: 1px solid $dark-grey;
+
+  &__link {
+    padding-right: 40px;
+  }
+
+  &__link:hover path,
+  &__link:focus path,
+  &__link:hover circle,
+  &__link:focus circle {
+    fill: $green;
+  }
+
+  &__link:focus path,
+  &__link:focus circle {
+    opacity: 0.3;
+  }
+
+  &__vk {
+    width: 22px;
+    height: 12px;
+  }
+
+  &__insta {
+    width: 17px;
+    height: 17px;
+  }
+
+  &__fb {
+    width: 10px;
+    height: 19px;
+  }
+}
