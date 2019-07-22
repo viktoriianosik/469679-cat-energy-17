@@ -23,6 +23,16 @@
     line-height: 18px;
     color: $light-black;
     border-bottom: 1px solid $dark-grey;
+
+    &--slim {
+      width: 225px;
+      padding-right: 15px;
+    }
+
+    &--pro {
+      width: 201px;
+      padding-right: 39px;
+    }
   }
 
   &__link {
@@ -63,11 +73,6 @@
   &--slim {
     margin-bottom: 20px;
 
-    &__text {
-      width: 225px;
-      padding-right: 15px;
-    }
-
     &::before {
       content: "";
       position: absolute;
@@ -82,11 +87,6 @@
 
   &--pro {
     margin-bottom: 30px;
-
-    &__text {
-      width: 201px;
-      padding-right: 39px;
-    }
 
     &::before {
       content: "";

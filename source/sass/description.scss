@@ -1,20 +1,13 @@
-.table {
+.description {
   width: 140px;
   padding-bottom: 23px;
   font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 16px;
+  text-align: left;
   color: $light-black;
 
-  &__row {
-    width: 70px;
-  }
-
-  &__cell {
-    text-align: left;
-  }
-
-  &__cell:last-child {
+  &__value {
     text-align: right;
   }
 }

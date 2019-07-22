@@ -9,12 +9,15 @@
     padding-right: 40px;
   }
 
-  &__link:hover &__image,
-  &__link:focus &__image {
+  &__link:hover path,
+  &__link:focus path,
+  &__link:hover circle,
+  &__link:focus circle {
     fill: $green;
   }
 
-  &__link:focus &__image {
+  &__link:focus path,
+  &__link:focus circle {
     opacity: 0.3;
   }
 
