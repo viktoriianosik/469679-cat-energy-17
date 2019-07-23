@@ -21,18 +21,27 @@
     opacity: 0.3;
   }
 
-  &__vk {
+  &__logo--vk {
     width: 22px;
     height: 12px;
   }
 
-  &__insta {
+  &__logo--insta {
     width: 17px;
     height: 17px;
   }
 
-  &__fb {
+  &__logo--fb {
     width: 10px;
     height: 19px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .social {
+    width: 324px;
+    margin: 0;
+    padding: 64px 0 62px 0;
+    border-bottom: none;
   }
 }

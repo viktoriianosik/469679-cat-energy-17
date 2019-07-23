@@ -1,5 +1,4 @@
 .navigation {
-  width: $mobile-width;
   margin: 0 auto;
   text-align: center;
 
@@ -32,3 +31,40 @@
     opacity: 0.3;
   }
 }
+
+@media (min-width: $tablet-width){
+  .navigation {
+    margin: 0;
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      width: 515px;
+    }
+    &__link {
+      padding-top: 7px;
+      padding-left: 35px;
+      font-size: 18px;
+      line-height: 25px;
+      font-weight: 400;
+      border-top: none;
+    }
+    &__item:last-child &__link {
+      border-bottom: none;
+    }
+  }
+}
+
+@media (min-width: $desktop-width){
+  .navigation {
+    &__list {
+      width: 690px;
+    }
+    &__link {
+      font-size: 20px;
+    }
+  }
+}
+
+

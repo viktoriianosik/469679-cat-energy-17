@@ -1,0 +1,19 @@
+@media (min-width: $tablet-width) {
+  .programs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: $tablet-width - 60px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1220px;
+    margin: 0 auto 75px;
+  }
+}

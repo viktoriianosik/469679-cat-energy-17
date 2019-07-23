@@ -1,12 +1,35 @@
 .main {
+  text-align: left;
+
   &__title {
-    width: 260px;
+    width: $mobile-width - 40px;
     margin: 0 auto;
-    padding: 26px 0;
+    padding-bottom: 26px;
     font-size: 36px;
     line-height: 60px;
     font-weight: normal;
     color: $black;
-    text-align: left;
+
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main {
+    &__title {
+      width: $tablet-width;
+      padding: 0 30px 155px;
+      margin: 0 auto;
+      box-sizing: border-box;
+      font-size: 60px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main {
+    &__title {
+      width: 1220px;
+      padding-left: 0;
+    }
   }
 }
