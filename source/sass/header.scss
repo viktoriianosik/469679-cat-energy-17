@@ -20,7 +20,7 @@
   }
 }
 
-@media (min-width: $tablet-width){
+@media (min-width: $tablet-width) {
   .header {
     display: flex;
     justify-content: space-between;
@@ -33,7 +33,7 @@
   }
 }
 
-@media (min-width: $desktop-width){
+@media (min-width: $desktop-width) {
   .header {
     width: 1220px;
     margin: 0 auto;

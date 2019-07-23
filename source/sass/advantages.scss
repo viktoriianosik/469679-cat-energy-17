@@ -104,10 +104,9 @@
       line-height: 24px;
     }
 
-    &__text:nth-child(odd){
+    &__text:nth-child(odd) {
       margin-right: 140px;
     }
-
   }
 }
 
@@ -116,7 +115,7 @@
     width: 1220px;
     padding-bottom: 90px;
 
-    &__text:nth-child(odd){
+    &__text:nth-child(odd) {
       margin-right: 80px;
     }
 
@@ -127,6 +126,5 @@
     &__text:last-child {
       margin-right: 0;
     }
-
   }
 }

@@ -30,7 +30,7 @@
   }
 }
 
-@media (min-width: $tablet-width){
+@media (min-width: $tablet-width) {
   .promo {
     position: relative;
     display: flex;
@@ -71,7 +71,7 @@
   }
 }
 
-@media (min-width: $desktop-width){
+@media (min-width: $desktop-width) {
   .promo {
     width: 1220px;
     margin: 0 auto;
@@ -91,5 +91,3 @@
     }
   }
 }
-
-
