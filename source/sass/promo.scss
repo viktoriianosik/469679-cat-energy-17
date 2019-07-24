@@ -1,12 +1,12 @@
 .promo {
   width: $mobile-width;
   margin: 0 auto;
-  padding-top: 30px;
-  padding-bottom: 22px;
-
+  padding: 30px 20px 22px;
+  box-sizing: border-box;
   font-size: 14px;
   line-height: 14px;
   color: #ffffff;
+  text-align: center;
   background: url("../img/index-background-mobile@1x.jpg") no-repeat 0 0;
 
   &__title {
@@ -21,12 +21,74 @@
   &__text {
     margin: 0;
     padding-bottom: 30px;
-
     text-transform: uppercase;
   }
 
   &__link {
+    display: block;
+    width: 280px;
     line-height: 18px;
     text-transform: uppercase;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .promo {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: $tablet-width;
+    padding: 0 $tablet-padding;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    color: $black;
+    background: none;
+
+    &__title {
+      width: 425px;
+      margin-left: 60px;
+      padding-bottom: 30px;
+      font-size: 60px;
+      line-height: 60px;
+    }
+
+    &__text {
+      margin-left: 60px;
+      padding-bottom: 20px;
+    }
+
+    &__image {
+      width: 709px;
+      height: 609px;
+    }
+
+    &__link {
+      position: absolute;
+      top: 210px;
+      left: 90px;
+      line-height: 20px;
+      z-index: 1;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo {
+    width: 1220px;
+    margin: 0 auto;
+    padding: 0;
+
+    &__image {
+      margin-top: -280px;
+      margin-left: 450px;
+      width: 552px;
+      height: 499px;
+      text-align: center;
+    }
+
+    &__link {
+      left: 170px;
+    }
   }
 }

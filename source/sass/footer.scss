@@ -1,8 +1,10 @@
 .footer {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
   width: $mobile-width;
+  margin: 0 auto;
+  padding: 0 $mobile-padding;
+  box-sizing: border-box;
   background-color: $grey;
 
   &__map {
@@ -24,5 +26,31 @@
 
   &__logo:focus &__logo-image {
     opacity: 0.6;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: $tablet-width;
+    padding: 0 $tablet-padding;
+
+    &__logo-image {
+      padding: 64px 0 62px;
+      border-bottom: none;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer {
+    width: $desktop-width;
+    padding: 0;
+
+    &__map {
+      width: 100%;
+    }
   }
 }
