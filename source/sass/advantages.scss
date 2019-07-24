@@ -1,7 +1,8 @@
 .advantages {
-  width: $mobile-width - 40px;
+  width: $mobile-width;
   margin: 0 auto;
-  padding-bottom: 45px;
+  padding: 0 $mobile-padding 45px;
+  box-sizing: border-box;
   text-align: left;
 
   &__title {
@@ -79,9 +80,10 @@
   .advantages {
     display: flex;
     flex-wrap: wrap;
-    width: $tablet-width - 60px;
+    width: $tablet-width;
     margin: 0 auto;
-    padding-bottom: 55px;
+    padding: 0 $tablet-padding 55px;
+    box-sizing: border-box;
     text-align: left;
 
     &__title {
@@ -99,7 +101,7 @@
       position: relative;
       width: 245px;
       margin: 0;
-      padding: 117px 0 48px 0;
+      padding: 117px 0 48px;
       font-size: 16px;
       line-height: 24px;
     }
@@ -112,13 +114,10 @@
 
 @media (min-width: $desktop-width) {
   .advantages {
-    width: 1220px;
-    padding-bottom: 90px;
+    width: $desktop-width;
+    padding: 0 0 90px;
 
-    &__text:nth-child(odd) {
-      margin-right: 80px;
-    }
-
+    &__text:nth-child(odd),
     &__text {
       margin-right: 80px;
     }

@@ -1,9 +1,9 @@
 .program {
   position: relative;
-  width: $mobile-width - 40px;
+  width: $mobile-width - 2 * $mobile-padding;
   margin: 0 auto;
-  padding: 21px;
-  padding-top: 40px;
+  padding: 21px 20px 40px;
+  box-sizing: border-box;
   text-align: left;
   background-color: $grey;
 
@@ -159,32 +159,32 @@
 
     &--slim {
       margin-bottom: 30px;
+    }
 
-      &::before {
-        content: "";
-        position: absolute;
-        top: 80px;
-        left: 475px;
-        width: 141px;
-        height: 194px;
-        background: url("../img/icon-cat-slim.svg") no-repeat 0 0;
-        z-index: 1;
-      }
+    &--slim::before {
+      content: "";
+      position: absolute;
+      top: 80px;
+      left: 475px;
+      width: 141px;
+      height: 194px;
+      background: url("../img/icon-cat-slim.svg") no-repeat 0 0;
+      z-index: 1;
     }
 
     &--pro {
       margin-bottom: 50px;
+    }
 
-      &::before {
-        content: "";
-        position: absolute;
-        top: 135px;
-        left: 442px;
-        width: 168px;
-        height: 113px;
-        background: url("../img/icon-cat-pro.svg") no-repeat 0 0;
-        z-index: 1;
-      }
+    &--pro::before {
+      content: "";
+      position: absolute;
+      top: 135px;
+      left: 442px;
+      width: 168px;
+      height: 113px;
+      background: url("../img/icon-cat-pro.svg") no-repeat 0 0;
+      z-index: 1;
     }
   }
 }
@@ -222,32 +222,32 @@
 
     &--slim {
       margin-bottom: 0;
+    }
 
-      &::before {
-        content: "";
-        position: absolute;
-        top: 41px;
-        left: 65px;
-        width: 71px;
-        height: 97px;
-        background: url("../img/icon-cat-slim.svg") no-repeat 0 0;
-        z-index: 1;
-      }
+    &--slim::before {
+      content: "";
+      position: absolute;
+      top: 41px;
+      left: 65px;
+      width: 71px;
+      height: 97px;
+      background: url("../img/icon-cat-slim.svg") no-repeat 0 0;
+      z-index: 1;
     }
 
     &--pro {
       margin-bottom: 0;
+    }
 
-      &::before {
-        content: "";
-        position: absolute;
-        top: 69px;
-        left: 34px;
-        width: 134px;
-        height: 57px;
-        background: url("../img/icon-cat-pro.svg") no-repeat 0 0;
-        z-index: 1;
-      }
+    &--pro::before {
+      content: "";
+      position: absolute;
+      top: 69px;
+      left: 34px;
+      width: 134px;
+      height: 57px;
+      background: url("../img/icon-cat-pro.svg") no-repeat 0 0;
+      z-index: 1;
     }
   }
 }

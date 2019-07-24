@@ -25,7 +25,7 @@
     display: flex;
     justify-content: space-between;
     width: $tablet-width;
-    padding: 24px 30px 60px 30px;
+    padding: 24px $tablet-padding 60px;
 
     &__image {
       padding: 0;
@@ -35,9 +35,9 @@
 
 @media (min-width: $desktop-width) {
   .header {
-    width: 1220px;
+    width: $desktop-width;
     margin: 0 auto;
-    padding: 53px 0 110px 0;
+    padding: 53px 0 110px;
 
     &__image {
       width: 203px;

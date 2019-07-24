@@ -3,8 +3,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: $tablet-width - 60px;
+    width: $tablet-width;
     margin: 0 auto;
+    padding: 0 $tablet-padding;
+    box-sizing: border-box;
   }
 }
 
@@ -15,5 +17,6 @@
     justify-content: space-between;
     width: 1220px;
     margin: 0 auto 75px;
+    padding: 0;
   }
 }

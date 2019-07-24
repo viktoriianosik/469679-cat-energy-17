@@ -9,7 +9,7 @@
     display: flex;
     flex-wrap: wrap;
     width: $tablet-width;
-    padding: 0 30px;
+    padding: 0 $tablet-padding;
     margin: 0 auto;
     box-sizing: border-box;
   }
@@ -17,7 +17,7 @@
 
 @media (min-width: $desktop-width) {
   .catalog {
-    width: 1220px;
+    width: $desktop-width;
     padding: 0;
   }
 }

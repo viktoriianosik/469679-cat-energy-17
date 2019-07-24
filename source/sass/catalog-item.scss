@@ -1,7 +1,7 @@
 .catalog-item {
   width: $mobile-width;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 $mobile-padding;
   box-sizing: border-box;
   border-top: 1px solid $dark-grey;
   text-align: center;
@@ -32,9 +32,7 @@
   .catalog-item {
     width: 324px;
     padding: 40px 37px;
-    margin: 0;
-    margin-right: 60px;
-    margin-bottom: 140px;
+    margin: 0 60px 140px 0;
     box-sizing: border-box;
     border-top: none;
     background-color: $grey;
