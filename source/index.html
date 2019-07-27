@@ -2,18 +2,22 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
     <title>HTML Academy: Кэт энерджи</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="header">
+    <header class="header header--background">
       <a class="header__logo" href="#">
         <img class="header__image" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип интернет-магазина CAT ENERGY">
       </a>
-      <nav class="navigation">
+      <nav class="navigation navigation--opened navigation--nojs">
+        <button class="navigation-toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a class="navigation__link" href="#">Главная</a>
+            <a class="navigation__link navigation__link--active" href="#">Главная</a>
           </li>
           <li class="navigation__item">
             <a class="navigation__link" href="catalog.html">Каталог продукции</a>
@@ -47,10 +51,22 @@
       <section class="advantages">
         <h2 class="advantages__title">Как это работает</h2>
         <div class="advantages__wrapper">
-          <p class="advantages__text advantages__text--leaf">Функциональное питание содержит только полезные питательные вещества.</p>
-          <p class="advantages__text advantages__text--powder">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
-          <p class="advantages__text advantages__text--dining">Замените один-два приема обычной еды на наше функциональное питание.</p>
-          <p class="advantages__text advantages__text--clock">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+          <p class="advantages__text advantages__text--leaf">
+            Функциональное питание содержит только полезные питательные вещества.
+            <span class="advantages__number">1</span>
+          </p>
+          <p class="advantages__text advantages__text--powder">
+            Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
+            <span class="advantages__number">2</span>
+          </p>
+          <p class="advantages__text advantages__text--dining">
+            Замените один-два приема обычной еды на наше функциональное питание.
+            <span class="advantages__number">3</span>
+          </p>
+          <p class="advantages__text advantages__text--clock">
+            Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
+            <span class="advantages__number">4</span>
+          </p>
         </div>
       </section>
       <section class="example container">
@@ -131,5 +147,6 @@
         </a>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

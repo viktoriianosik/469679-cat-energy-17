@@ -1,8 +1,8 @@
 .program {
   position: relative;
   width: $mobile-width - 2 * $mobile-padding;
-  margin: 0 auto;
-  padding: 21px 20px 40px;
+  margin: 0 auto 20px;
+  padding: 30px 20px 20px;
   box-sizing: border-box;
   text-align: left;
   background-color: $grey;
@@ -10,16 +10,17 @@
   &__title {
     margin: 0;
     padding-left: 71px;
-    padding-bottom: 33px;
+    padding-bottom: 29px;
     font-size: 24px;
     line-height: 37px;
+    font-weight: normal;
     text-transform: uppercase;
     color: $black;
   }
 
   &__text {
     margin: 0;
-    padding-bottom: 30px;
+    padding-bottom: 22px;
     font-family: "Arial", sans-serif;
     font-size: 14px;
     line-height: 18px;
@@ -72,42 +73,33 @@
     background-color: $green;
   }
 
-  &--slim {
-    margin-bottom: 20px;
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 22px;
-      left: 30px;
-      width: 35px;
-      height: 49px;
-      background: url("../img/icon-cat-slim.svg") no-repeat 0 0;
-      z-index: 1;
-    }
+  &--slim::before {
+    content: "";
+    position: absolute;
+    top: 22px;
+    left: 30px;
+    width: 35px;
+    height: 49px;
+    background: url("../img/icon-cat-slim.svg") no-repeat 0 0;
+    z-index: 1;
   }
 
-  &--pro {
-    margin-bottom: 30px;
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 35px;
-      left: 13px;
-      width: 67px;
-      height: 28px;
-      background: url("../img/icon-cat-pro.svg") no-repeat 0 0;
-      z-index: 1;
-    }
+  &--pro::before {
+    content: "";
+    position: absolute;
+    top: 35px;
+    left: 13px;
+    width: 67px;
+    height: 28px;
+    background: url("../img/icon-cat-pro.svg") no-repeat 0 0;
+    z-index: 1;
   }
 }
 
 @media (min-width: $tablet-width) {
   .program {
     width: 100%;
-    padding-left: 55px;
-    padding-top: 81px;
+    padding: 75px 0 63px 55px;
     box-sizing: border-box;
 
     &__title {
@@ -118,17 +110,17 @@
     }
 
     &__text {
-      padding-bottom: 60px;
+      padding-bottom: 36px;
       font-size: 16px;
       line-height: 24px;
       border-bottom: none;
 
       &--slim {
-        width: 385px;
+        width: 375px;
       }
 
       &--pro {
-        width: 350px;
+        width: 340px;
       }
     }
 
@@ -143,8 +135,8 @@
     &__link::after {
       content: "";
       position: absolute;
-      top: 22px;
-      left: 112px;
+      top: 24px;
+      left: 130px;
       width: 25px;
       height: 12px;
       background: url("../img/icon-right-arrow-long.svg");
@@ -165,7 +157,7 @@
       content: "";
       position: absolute;
       top: 80px;
-      left: 475px;
+      left: 477px;
       width: 141px;
       height: 194px;
       background: url("../img/icon-cat-slim.svg") no-repeat 0 0;
@@ -173,15 +165,15 @@
     }
 
     &--pro {
-      margin-bottom: 50px;
+      margin-bottom: 45px;
     }
 
     &--pro::before {
       content: "";
       position: absolute;
-      top: 135px;
-      left: 442px;
-      width: 168px;
+      top: 133px;
+      left: 413px;
+      width: 268px;
       height: 113px;
       background: url("../img/icon-cat-pro.svg") no-repeat 0 0;
       z-index: 1;
@@ -193,16 +185,17 @@
   .program {
     width: 570px;
     margin: 0;
+    padding-left: 50px;
 
     &__title {
       margin: 0;
       padding-bottom: 75px;
-      padding-left: 160px;
+      padding-left: 158px;
       font-size: 36px;
     }
 
     &__text {
-      padding-bottom: 35px;
+      padding-bottom: 11px;
 
       &--slim {
         width: 465px;

@@ -25,3 +25,19 @@
     background-color: $grey-hvr;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .button {
+    width: 245px;
+    padding: 17px 0;
+
+    &--order {
+      padding: 11px 0;
+    }
+
+    &--show {
+      background-color: $grey;
+      padding: 11px 0;
+    }
+  }
+}

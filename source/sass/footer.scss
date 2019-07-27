@@ -47,7 +47,8 @@
 @media (min-width: $desktop-width) {
   .footer {
     width: $desktop-width;
-    padding: 0;
+    padding: 0 $desktop-padding;
+    box-sizing: border-box;
 
     &__map {
       width: 100%;

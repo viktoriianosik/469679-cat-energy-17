@@ -1,10 +1,11 @@
 .copyright {
   position: relative;
-  padding: 22px 0;
+  padding: 18px 0;
 
   &__logo {
     display: block;
     padding: 9px 0;
+    font-family: Arial, sans-serif;
     font-size: 16px;
     line-height: 16px;
     color: $light-black;
@@ -22,17 +23,17 @@
 
   &__image {
     position: absolute;
-    top: 22px;
-    right: 0;
-    width: 27px;
-    height: 34px;
+    top: 17px;
+    right: -9px;
+    width: 45px;
+    height: 40px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .copyright {
     width: 162px;
-    padding: 54px 0 53px;
+    padding: 57px 0 53px;
 
     &__image {
       top: 55px;
