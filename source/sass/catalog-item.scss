@@ -18,7 +18,7 @@
     padding: 21px 0 10px;
     font-size: 16px;
     line-height: 20px;
-    font-weight: normal;
+    font-weight: 400;
     text-transform: uppercase;
     text-align: left;
     color: $black;
@@ -62,14 +62,14 @@
     }
 
     &__image--big {
-      margin: -125px 0 16px;
+      margin-top: -160px;
       width: 195px;
       height: 208px;
     }
 
     &__name {
       width: 131px;
-      padding-left: 20px;
+      padding-left: 60px;
       padding-bottom: 21px;
       font-size: 20px;
       text-align: center;
@@ -96,6 +96,10 @@
 
     &:nth-child(4n) {
       margin-right: 0;
+    }
+
+    &__name {
+      padding-left: 20px;
     }
 
     &__order {

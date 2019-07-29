@@ -36,6 +36,7 @@
     justify-content: space-between;
     width: $tablet-width;
     padding: 0 $tablet-padding;
+    box-sizing: border-box;
 
     &__logo-image {
       padding: 64px 0 62px;
@@ -51,7 +52,7 @@
     box-sizing: border-box;
 
     &__map {
-      width: 100%;
+      width: 100vw;
     }
   }
 }

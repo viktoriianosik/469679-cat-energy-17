@@ -1,8 +1,8 @@
 .program {
   position: relative;
-  width: $mobile-width - 2 * $mobile-padding;
+  width: $mobile-width;
   margin: 0 auto 20px;
-  padding: 30px 20px 20px;
+  padding: 30px $mobile-padding 20px;
   box-sizing: border-box;
   text-align: left;
   background-color: $grey;
@@ -13,7 +13,7 @@
     padding-bottom: 29px;
     font-size: 24px;
     line-height: 37px;
-    font-weight: normal;
+    font-weight: 400;
     text-transform: uppercase;
     color: $black;
   }
