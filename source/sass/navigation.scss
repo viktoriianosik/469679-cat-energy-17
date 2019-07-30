@@ -114,25 +114,16 @@
       width: 690px;
     }
 
-    &__link {
-      font-size: 20px;
-    }
-
-    &__link--color {
+    &__list--color .navigation__link {
       color: #ffffff;
     }
 
-    &__link--color-active {
-      border-bottom: 2px solid #ffffff;
+    &__list--color .navigation__link--active {
+      border-color: #ffffff;
     }
-  }
 
-  .header-background .navigation__link {
-    font-size: 20px;
-    color: #ffffff;
-  }
-
-  .header-background .navigation__link--active {
-    border-bottom-color: #ffffff;
+    &__link {
+      font-size: 20px;
+    }
   }
 }
