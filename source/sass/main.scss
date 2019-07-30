@@ -4,12 +4,13 @@
   &__title {
     width: $mobile-width;
     margin: 0 auto;
-    padding: 0 $mobile-padding 26px;
+    padding: 15px $mobile-padding 28px;
     box-sizing: border-box;
     font-size: 36px;
     line-height: 60px;
-    font-weight: normal;
+    font-weight: 400;
     color: $black;
+    border-top: 1px solid $dark-grey;
   }
 }
 
@@ -17,10 +18,11 @@
   .main {
     &__title {
       width: $tablet-width;
-      padding: 0 $tablet-padding 155px;
+      padding: 0 $tablet-padding 163px;
       margin: 0 auto;
       box-sizing: border-box;
       font-size: 60px;
+      border-top: none;
     }
   }
 }
@@ -29,7 +31,8 @@
   .main {
     &__title {
       width: $desktop-width;
-      padding-left: 0;
+      padding: 0 $desktop-padding 163px;
+      box-sizing: border-box;
     }
   }
 }

@@ -1,13 +1,12 @@
 .header {
   width: $mobile-width;
   margin: 0 auto;
-  box-sizing: border-box;
   text-align: left;
 
   &__image {
     width: 191px;
     height: 39px;
-    padding: 11px 0 15px 20px;
+    padding: 11px 0 12px 20px;
     text-align: left;
   }
 
@@ -25,7 +24,8 @@
     display: flex;
     justify-content: space-between;
     width: $tablet-width;
-    padding: 24px $tablet-padding 60px;
+    padding: 24px $tablet-padding 64px;
+    box-sizing: border-box;
 
     &__image {
       padding: 0;
@@ -37,7 +37,8 @@
   .header {
     width: $desktop-width;
     margin: 0 auto;
-    padding: 53px 0 110px;
+    padding: 53px $desktop-padding 91px;
+    box-sizing: border-box;
 
     &__image {
       width: 203px;

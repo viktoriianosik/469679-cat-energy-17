@@ -9,6 +9,7 @@
     margin: 0;
     font-size: 36px;
     line-height: 60px;
+    font-weight: 400;
   }
 
   &__text {
@@ -24,7 +25,7 @@
   &__text::after {
     content: "";
     position: absolute;
-    top: 24px;
+    top: 26px;
     left: 0;
     width: 60px;
     height: 60px;
@@ -34,8 +35,8 @@
   &__text--leaf::before {
     content: "";
     position: absolute;
-    top: 28px;
-    left: 7px;
+    top: 33px;
+    left: 5px;
     width: 40px;
     height: 40px;
     background: url("../img/advantage-leaf@1x.png") no-repeat 0 0;
@@ -45,8 +46,8 @@
   &__text--powder::before {
     content: "";
     position: absolute;
-    top: 28px;
-    left: 6px;
+    top: 30px;
+    left: 5px;
     width: 40px;
     height: 40px;
     background: url("../img/advantage-powder@1x.png") no-repeat 0 0;
@@ -56,8 +57,8 @@
   &__text--dining::before {
     content: "";
     position: absolute;
-    top: 31px;
-    left: 5px;
+    top: 30px;
+    left: 4px;
     width: 40px;
     height: 40px;
     background: url("../img/advantage-dining@1x.png") no-repeat 0 0;
@@ -67,12 +68,16 @@
   &__text--clock::before {
     content: "";
     position: absolute;
-    top: 28px;
+    top: 29px;
     left: 5px;
     width: 40px;
     height: 40px;
     background: url("../img/advantage-clock@1x.png") no-repeat 0 0;
     z-index: 1;
+  }
+
+  &__number {
+    display: none;
   }
 }
 
@@ -101,7 +106,7 @@
       position: relative;
       width: 245px;
       margin: 0;
-      padding: 117px 0 48px;
+      padding: 120px 0 126px;
       font-size: 16px;
       line-height: 24px;
     }
@@ -109,13 +114,60 @@
     &__text:nth-child(odd) {
       margin-right: 140px;
     }
+
+    &__text::after {
+      top: 8px;
+      width: 80px;
+      height: 80px;
+    }
+
+    &__text--leaf::before {
+      top: 23px;
+      left: 14px;
+      width: 40px;
+      height: 40px;
+    }
+
+    &__text--powder::before {
+      top: 23px;
+      left: 13px;
+      width: 40px;
+      height: 40px;
+    }
+
+    &__text--dining::before {
+      top: 22px;
+      left: 14px;
+      width: 40px;
+      height: 40px;
+    }
+
+    &__text--clock::before {
+      top: 22px;
+      left: 13px;
+      width: 40px;
+      height: 40px;
+    }
+
+    &__number {
+      display: block;
+      position: absolute;
+      top: -30px;
+      right: 0;
+      font-family: "Oswald", "Arial", sans-serif;
+      font-size: 281px;
+      line-height: 281px;
+      color: $grey;
+      z-index: -1;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .advantages {
     width: $desktop-width;
-    padding: 0 0 90px;
+    padding: 0 $desktop-padding 90px;
+    box-sizing: border-box;
 
     &__text:nth-child(odd),
     &__text {

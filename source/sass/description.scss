@@ -1,6 +1,5 @@
 .description {
   width: 140px;
-  padding-bottom: 23px;
   font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 16px;
@@ -9,5 +8,25 @@
 
   &__value {
     text-align: right;
+    padding-left: 2px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .description {
+    width: 245px;
+    font-size: 16px;
+    border-collapse: collapse;
+
+    &__item td {
+      padding: 8px 0 6px;
+      border-bottom: 1px solid $dark-grey;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .description {
+    width: 165px;
   }
 }

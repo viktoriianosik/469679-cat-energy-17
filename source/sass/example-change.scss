@@ -1,0 +1,33 @@
+.example-change {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__state {
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+
+  &__range {
+    position: relative;
+    display: block;
+    width: 82px;
+    height: 12px;
+    margin: 0 18px;
+    background-color: #ffffff;
+    border: 1px solid $grey-border;
+    border-radius: 6px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 3px;
+      left: 6px;
+      width: 35px;
+      height: 6px;
+      background-color: $green;
+      border-radius: 3px;
+    }
+  }
+}

@@ -1,7 +1,7 @@
 .promo {
   width: $mobile-width;
   margin: 0 auto;
-  padding: 30px 20px 22px;
+  padding: 27px $mobile-padding 22px;
   box-sizing: border-box;
   font-size: 14px;
   line-height: 14px;
@@ -12,10 +12,10 @@
   &__title {
     width: 250px;
     margin: 0 auto;
-    padding-bottom: 28px;
+    padding-bottom: 25px;
     font-size: 36px;
     line-height: 36px;
-    font-weight: normal;
+    font-weight: 400;
   }
 
   &__text {
@@ -47,14 +47,14 @@
 
     &__title {
       width: 425px;
-      margin-left: 60px;
-      padding-bottom: 30px;
+      margin-left: 88px;
+      padding-bottom: 40px;
       font-size: 60px;
       line-height: 60px;
     }
 
     &__text {
-      margin-left: 60px;
+      margin-left: 88px;
       padding-bottom: 20px;
     }
 
@@ -65,8 +65,8 @@
 
     &__link {
       position: absolute;
-      top: 210px;
-      left: 90px;
+      top: 226px;
+      left: 119px;
       line-height: 20px;
       z-index: 1;
     }
@@ -75,20 +75,30 @@
 
 @media (min-width: $desktop-width) {
   .promo {
-    width: 1220px;
-    margin: 0 auto;
-    padding: 0;
+    width: $desktop-width;
+    margin: 0 auto 130px;
+    padding: 0 $desktop-padding;
+    box-sizing: border-box;
+
+    &__title {
+      margin-left: 80px;
+    }
+
+    &__text {
+      margin-left: 79px;
+    }
 
     &__image {
-      margin-top: -280px;
-      margin-left: 450px;
+      margin-top: -275px;
+      margin-left: 472px;
       width: 552px;
       height: 499px;
       text-align: center;
     }
 
     &__link {
-      left: 170px;
+      top: 233px;
+      left: 120px;
     }
   }
 }

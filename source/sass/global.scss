@@ -4,7 +4,7 @@ body {
   min-width: $mobile-width;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
-  font-weight: normal;
+  font-weight: 400;
   line-height: 18px;
   color: $black;
   text-align: center;
@@ -38,7 +38,6 @@ img {
 
 .visually-hidden:not(:focus):not(:active) {
   position: absolute;
-
   width: 1px;
   height: 1px;
   margin: -1px;
