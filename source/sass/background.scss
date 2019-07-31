@@ -1,12 +1,12 @@
-.promo-background {
+.background {
   display: none;
 }
 
 @media (min-width: $desktop-width) {
-  .promo-background {
+  .background {
     display: block;
     position: absolute;
-    top: -223px;
+    top: 0;
     right: 0;
     width: 50%;
     height: 696px;
