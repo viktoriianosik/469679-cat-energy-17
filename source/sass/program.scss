@@ -1,6 +1,6 @@
 .program {
   position: relative;
-  width: $mobile-width;
+  width: $mobile-width - 2 * $mobile-padding;
   margin: 0 auto 20px;
   padding: 30px $mobile-padding 20px;
   box-sizing: border-box;

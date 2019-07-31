@@ -24,11 +24,13 @@
     display: flex;
     justify-content: space-between;
     width: $tablet-width;
-    padding: 24px $tablet-padding 64px;
+    padding: 12px $tablet-padding 55px;
     box-sizing: border-box;
 
     &__image {
       padding: 0;
+      width: 174px;
+      height: 59px;
     }
   }
 }
@@ -37,7 +39,7 @@
   .header {
     width: $desktop-width;
     margin: 0 auto;
-    padding: 53px $desktop-padding 91px;
+    padding: 53px $desktop-padding 107px;
     box-sizing: border-box;
 
     &__image {

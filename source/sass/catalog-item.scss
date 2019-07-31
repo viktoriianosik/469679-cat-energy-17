@@ -56,13 +56,14 @@
     }
 
     &__image {
-      margin: -125px 0 50px;
-      width: 163px;
-      height: 174px;
+      margin: -86px 0 13px;
+      width: 161px;
+      height: 172px;
+      object-fit: cover;
     }
 
     &__image--big {
-      margin-top: -160px;
+      margin-top: -122px;
       width: 195px;
       height: 208px;
     }
