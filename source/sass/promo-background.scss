@@ -6,7 +6,7 @@
   .promo-background {
     display: block;
     position: absolute;
-    top: -221px;
+    top: -223px;
     right: 0;
     width: 50%;
     height: 696px;
@@ -16,7 +16,7 @@
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/index-background-desktop@2x.jpg");
-      background-size: 720px auto;
+      background-size: cover;
     }
   }
 }

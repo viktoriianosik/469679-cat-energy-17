@@ -85,17 +85,17 @@
 
 @media (min-width: $desktop-width) {
   .promo {
-    width: 100%;
-    margin-bottom: 130px;
-    padding: 0 calc(100% - $desktop-width);
+    width: $desktop-width;
+    margin: 0 auto 130px;
+    padding: 0 $desktop-padding;
     box-sizing: border-box;
 
     &__title {
-      margin-left: 80px;
+      margin-left: 82px;
     }
 
     &__text {
-      margin-left: 79px;
+      margin-left: 81px;
     }
 
     &__image {
