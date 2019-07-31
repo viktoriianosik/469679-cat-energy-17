@@ -87,7 +87,7 @@
   .promo {
     width: 100%;
     margin-bottom: 130px;
-    padding: 0 calc("100% - $desktop-width");
+    padding: 0 calc(100% - $desktop-width);
     box-sizing: border-box;
 
     &__title {
