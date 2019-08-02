@@ -19,6 +19,7 @@
     position: absolute;
     top: 50px;
     left: 24px;
+    width: 60px;
     padding: 0 10px;
     font-family: "Arial", sans-serif;
     font-size: 12px;
@@ -35,16 +36,15 @@
 
     &__text {
       width: 162px;
-      padding: 23px 0;
-      margin-bottom: 100px;
+      padding: 16px 0;
+      margin-bottom: 255px;
       font-size: 30px;
       line-height: 37px;
     }
 
     &__size {
-      position: absolute;
-      top: 75px;
-      left: 24px;
+      top: 63px;
+      width: auto;
       padding: 0 9px;
       font-size: 14px;
       line-height: 14px;
@@ -53,6 +53,21 @@
 
     &__size--time {
       left: 10px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example-result {
+    width: 368px;
+    margin-bottom: 60px;
+
+    &__text {
+      margin:0;
+    }
+
+    &__size {
+      background-color: $grey;
     }
   }
 }
