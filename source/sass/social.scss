@@ -1,6 +1,7 @@
 .social {
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 20px 0;
   margin: 0;
   list-style: none;
@@ -8,17 +9,15 @@
 
   &__link {
     padding-right: 40px;
+    cursor: pointer;
   }
 
-  &__link:hover path,
-  &__link:focus path,
-  &__link:hover circle,
-  &__link:focus circle {
+  &__link:hover .social__logo,
+  &__link:focus .social__logo {
     fill: $green;
   }
 
-  &__link:focus path,
-  &__link:focus circle {
+  &__link:focus .social__logo {
     opacity: 0.3;
   }
 
