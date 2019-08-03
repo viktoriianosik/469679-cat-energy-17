@@ -12,12 +12,12 @@
     text-align: left;
   }
 
-  &__logo:hover &__path,
-  &__logo:focus &__path {
+  &__logo:hover .copyright__image,
+  &__logo:focus .copyright__image {
     fill: $green;
   }
 
-  &__logo:focus {
+  &__logo:focus .copyright__image {
     opacity: 0.3;
   }
 

@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 35px;
 
   &__state {
     font-size: 16px;
@@ -29,5 +30,59 @@
       background-color: $green;
       border-radius: 3px;
     }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .example-change {
+    position: absolute;
+    bottom: 30px;
+    left: 99px;
+
+    &__state {
+      font-size: 20px;
+      padding-bottom: 6px;
+      border-bottom: 1px dashed #b8b8b8;
+    }
+
+    &__range {
+      position: relative;
+      display: block;
+      width: 428px;
+      height: 6px;
+      margin: -7px 19px 0 24px;
+      background-color: #dcdcdc;
+      border-radius: 2.5px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: -15px;
+        left: 195px;
+        width: 34px;
+        height: 34px;
+        background-color: #ffffff;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+        border: solid 1px $grey-border;
+        border-radius: 50%;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 209px;
+        width: 8px;
+        height: 8px;
+        background-color: $green;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example-change {
+    left: 690px;
   }
 }

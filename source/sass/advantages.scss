@@ -107,13 +107,13 @@
     flex-wrap: wrap;
     width: $tablet-width;
     margin: 0 auto;
-    padding: 0 $tablet-padding 55px;
+    padding: 0 $tablet-padding;
     box-sizing: border-box;
     text-align: left;
 
     &__title {
       font-size: 60px;
-      padding-bottom: 63px;
+      padding-bottom: 45px;
     }
 
     &__wrapper {
@@ -126,7 +126,7 @@
       position: relative;
       width: 245px;
       margin: 0;
-      padding: 120px 0 126px;
+      padding: 140px 0 105px;
       font-size: 16px;
       line-height: 24px;
     }
@@ -136,34 +136,34 @@
     }
 
     &__text::after {
-      top: 8px;
+      top: 27px;
       width: 80px;
       height: 80px;
     }
 
     &__text--leaf::before {
-      top: 23px;
+      top: 42px;
       left: 14px;
       width: 40px;
       height: 40px;
     }
 
     &__text--powder::before {
-      top: 23px;
+      top: 42px;
       left: 13px;
       width: 40px;
       height: 40px;
     }
 
     &__text--dining::before {
-      top: 22px;
+      top: 41px;
       left: 14px;
       width: 40px;
       height: 40px;
     }
 
     &__text--clock::before {
-      top: 22px;
+      top: 41px;
       left: 13px;
       width: 40px;
       height: 40px;
@@ -172,7 +172,7 @@
     &__number {
       display: block;
       position: absolute;
-      top: -30px;
+      top: -10px;
       right: 0;
       font-family: "Oswald", "Arial", sans-serif;
       font-size: 281px;
@@ -186,7 +186,7 @@
 @media (min-width: $desktop-width) {
   .advantages {
     width: $desktop-width;
-    padding: 0 $desktop-padding 90px;
+    padding: 0 $desktop-padding 5px;
     box-sizing: border-box;
 
     &__text:nth-child(odd),
