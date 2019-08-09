@@ -1,5 +1,25 @@
-.container {
-  width: 280px;
-  margin: 0 auto;
-  padding: 0 20px;
+@media (min-width: $tablet-width) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: $tablet-width;
+    padding: 0 $tablet-padding;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    width: $desktop-width;
+    padding: 0 $desktop-padding;
+    box-sizing: border-box;
+
+    &--example {
+      width: 650px;
+      padding: 74px $desktop-padding;
+      background-color: $grey;
+      flex-direction: column;
+    }
+  }
 }

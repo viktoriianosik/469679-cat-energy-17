@@ -1,6 +1,6 @@
 .copyright {
   position: relative;
-  padding: 18px 0;
+  padding: 18px $mobile-padding;
 
   &__logo {
     display: block;
@@ -24,7 +24,7 @@
   &__image {
     position: absolute;
     top: 17px;
-    right: -9px;
+    right: 10px;
     width: 45px;
     height: 40px;
   }
@@ -37,6 +37,7 @@
 
     &__image {
       top: 55px;
+      right: -10px;
     }
   }
 }
