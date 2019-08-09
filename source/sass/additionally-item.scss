@@ -1,4 +1,11 @@
 .additionally-item {
+  padding: 14px 0;
+  border-top: 1px solid $grey-border;
+
+  &:last-child {
+    border-bottom: 1px solid $grey-border;
+  }
+
   &__name {
     padding-bottom: 15px;
     margin: 0;
@@ -6,5 +13,21 @@
     font-weight: 400;
     text-transform: uppercase;
     color: #222222;
+  }
+
+  &__size,
+  &__cost {
+    margin: 0;
+    padding-bottom: 14px;
+    font-family: "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 14px;
+    color: $light-black;
+  }
+
+  &__order {
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
   }
 }
