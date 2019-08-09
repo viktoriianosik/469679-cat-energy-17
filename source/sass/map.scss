@@ -9,7 +9,7 @@
     left: 122px;
     width: 55px;
     height: 53px;
-    background: url(../img/map-pin.png) no-repeat 0 0;
+    background: url("../img/map-pin.png") no-repeat 0 0;
     background-size: cover;
     z-index: 2;
   }
@@ -23,7 +23,7 @@
 
   &__image {
     position: absolute;
-    top:0;
+    top: 0;
     left: 0;
     width: $mobile-width;
     height: 400px;

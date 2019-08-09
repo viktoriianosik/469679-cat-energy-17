@@ -56,7 +56,7 @@ gulp.task("images", function () {
   .pipe(gulp.dest("source/img"));
 });
 
- gulp.task("sprite", function () {
+gulp.task("sprite", function () {
   return gulp.src([
     "source/img/icon-vk.svg",
     "source/img/icon-fb.svg",
