@@ -1,23 +1,47 @@
 .additionally {
+  position: relative;
   width: $mobile-width;
   margin: 0 auto;
 
+  &::before {
+    content: "";
+    position: absolute;
+    top: 42px;
+    right: 0;
+    width: 100%;
+    height: 3px;
+    background-color: $green;
+    z-index: -1;
+  }
+
   &__title {
-    position: relative;
+    width: 226px;
     padding: 30px $mobile-padding;
     margin: 0;
     font-size: 24px;
     line-height: 24px;
     font-weight: 400;
+    background-color: #ffffff;
   }
+}
 
-  &__title::before {
-    content: "";
-    position: absolute;
-    top: 42px;
-    right: 0;
-    width: 17%;
-    height: 3px;
-    background-color: $green;
+@media (min-width: $tablet-width) {
+  .additionally {
+    width: $tablet-width;
+    padding-left: $tablet-padding;
+    box-sizing: border-box;
+
+    &::before {
+      top: 21px;
+    }
+
+    &__title {
+      width: 338px;
+      padding: 0 37px;
+      margin-bottom: 75px;
+      font-size: 36px;
+      line-height: 36px;
+      background-color: #ffffff;
+    }
   }
 }

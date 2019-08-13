@@ -1,0 +1,54 @@
+.gift {
+  position: relative;
+  min-height: 289px;
+  margin: 39px $mobile-padding 35px;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  background-color: $green;
+  background: url("../img/gift-photo-mobile@1x.jpg") no-repeat 0 0;
+
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+    background-size: 280px auto;
+  }
+
+  &__text {
+    width: 160px;
+    margin: 0;
+    text-align: center;
+    padding-top: 190px;
+    padding-left: 60px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 65px;
+    left: 113px;
+    width: 56px;
+    height: 61px;
+    background: url("../img/icon-gift.svg") no-repeat 0 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .gift {
+    min-height: 200px;
+    margin: 69px $tablet-padding 75px 0;
+    background: url("../img/gift-photo-tablet@1x.jpg") no-repeat 0 0;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
+      background-size: 708px auto;
+    }
+
+    &__text {
+      text-align: left;
+      padding-top: 75px;
+      padding-left: 425px;
+    }
+  }
+}

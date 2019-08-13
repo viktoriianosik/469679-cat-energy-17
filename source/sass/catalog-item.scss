@@ -51,6 +51,11 @@
       margin-right: 0;
     }
 
+    &:last-child,
+    &:nth-last-child(2) {
+      margin-bottom: 70px;
+    }
+
     &__wrapper {
       flex-direction: column;
     }

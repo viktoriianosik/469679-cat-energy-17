@@ -3,3 +3,10 @@
   padding: 0 $mobile-padding;
   margin: 0;
 }
+
+@media (min-width: $tablet-width) {
+  .additionally-list {
+    padding: 0;
+    padding-right: $tablet-padding;
+  }
+}

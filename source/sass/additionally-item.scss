@@ -31,3 +31,27 @@
     text-transform: uppercase;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .additionally-item {
+    padding: 26px 40px;
+    border-left: 1px solid $grey-border;
+    border-right: 1px solid $grey-border;
+
+    &__name {
+      padding-bottom: 25px;
+      font-size: 20px;
+      line-height: 20px;
+    }
+
+    &__size,
+    &__cost {
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    &__order {
+      width: 100%;
+    }
+  }
+}
