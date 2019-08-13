@@ -55,3 +55,28 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .additionally-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0;
+    border-left: none;
+    border-right: none;
+
+    &__name {
+      padding-bottom: 0;
+    }
+
+    &__size,
+    &__cost {
+      font-size: 16px;
+      line-height: 20px;
+      padding: 0;
+    }
+
+    &__order {
+      width: 245px;
+    }
+  }
+}

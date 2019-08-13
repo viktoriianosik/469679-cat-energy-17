@@ -1,12 +1,13 @@
 .additionally-list {
   list-style: none;
-  padding: 0 $mobile-padding;
+  padding: 0;
   margin: 0;
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
   .additionally-list {
-    padding: 0;
-    padding-right: $tablet-padding;
+    width: 895px;
+    margin-bottom: 85px;
   }
 }
+

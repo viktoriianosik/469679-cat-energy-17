@@ -5,3 +5,9 @@
     align-items: center;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .additionally-wrapper {
+    width: 610px;
+  }
+}

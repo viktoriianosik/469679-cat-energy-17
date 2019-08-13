@@ -1,7 +1,7 @@
 .gift {
   position: relative;
   min-height: 289px;
-  margin: 39px $mobile-padding 35px;
+  margin: 39px 0 35px;
   font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
@@ -37,7 +37,7 @@
 @media (min-width: $tablet-width) {
   .gift {
     min-height: 200px;
-    margin: 69px $tablet-padding 75px 0;
+    margin: 69px 0 75px;
     background: url("../img/gift-photo-tablet@1x.jpg") no-repeat 0 0;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -49,6 +49,30 @@
       text-align: left;
       padding-top: 75px;
       padding-left: 425px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gift {
+    width: 245px;
+    min-height: 290px;
+    margin: 0;
+    background: url("../img/gift-photo-desktop@1x.jpg") no-repeat 0 0;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/gift-photo-desktop@2x.jpg");
+      background-size: 245px auto;
+    }
+
+    &__text {
+      text-align: center;
+      padding-top: 190px;
+      padding-left: 45px;
+    }
+
+    &::before {
+      left: 96px;
     }
   }
 }

@@ -104,6 +104,11 @@
       margin-right: 0;
     }
 
+    &:last-child,
+    &:nth-last-child(2) {
+      margin-bottom: 140px;
+    }
+
     &__name {
       padding-left: 20px;
     }

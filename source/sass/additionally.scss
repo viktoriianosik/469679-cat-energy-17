@@ -2,6 +2,8 @@
   position: relative;
   width: $mobile-width;
   margin: 0 auto;
+  padding: 0 $mobile-padding;
+  box-sizing: border-box;
 
   &::before {
     content: "";
@@ -18,6 +20,7 @@
     width: 226px;
     padding: 30px $mobile-padding;
     margin: 0;
+    margin-left: -20px;
     font-size: 24px;
     line-height: 24px;
     font-weight: 400;
@@ -28,8 +31,7 @@
 @media (min-width: $tablet-width) {
   .additionally {
     width: $tablet-width;
-    padding-left: $tablet-padding;
-    box-sizing: border-box;
+    padding: 0 $tablet-padding;
 
     &::before {
       top: 21px;
@@ -38,10 +40,36 @@
     &__title {
       width: 338px;
       padding: 0 37px;
+      margin-left: 0;
       margin-bottom: 75px;
       font-size: 36px;
       line-height: 36px;
       background-color: #ffffff;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additionally {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: $desktop-width;
+    padding: 0 $desktop-padding;
+    margin-top: -60px;
+
+    &::before {
+      top: 21px;
+    }
+
+    &__title {
+      width: 338px;
+      padding: 0 $desktop-padding;
+      margin-left: -40px;
+    }
+
+    &__order {
+      display: block;
     }
   }
 }

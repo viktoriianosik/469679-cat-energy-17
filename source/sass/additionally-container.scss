@@ -1,10 +1,17 @@
 .additionally-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 @media (min-width: $tablet-width) {
   .additionally-container {
     width: 230px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additionally-container {
+    width: 285px;
   }
 }
