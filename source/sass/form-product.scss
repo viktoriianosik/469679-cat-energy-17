@@ -1,0 +1,28 @@
+.form-product {
+  position: relative;
+  padding-bottom: 25px;
+  padding-left: 45px;
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+
+  &__input + .form-product__input-new {
+    position: absolute;
+    top: -7px;
+    left: 0;
+    width: 28px;
+    height: 28px;
+    border: 1px solid $grey-border;
+  }
+
+  &__input:checked + .form-product__input-new::before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 4px;
+    width: 22px;
+    height: 17px;
+    background: url("../img/icon-tick.svg") no-repeat 0 0;
+  }
+}

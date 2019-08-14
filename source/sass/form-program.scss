@@ -1,0 +1,30 @@
+.form-program {
+  position: relative;
+  padding-bottom: 25px;
+  padding-left: 45px;
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+
+  &__input + .form-program__input-new {
+  position: absolute;
+  top: -7px;
+  left: 0;
+  width: 29px;
+  height: 29px;
+  border: 1px solid $grey-border;
+  border-radius: 50%;
+  }
+
+  &__input:checked + .form-program__input-new::before {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: 8px;
+    width: 12px;
+    height: 12px;
+    background-color: $green;
+    border-radius: 50%;
+  }
+}

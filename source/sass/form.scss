@@ -1,0 +1,48 @@
+.form {
+  padding: 0;
+  margin: 0;
+  border: none;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  &__title {
+    padding: 28px $mobile-padding 33px;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 400;
+    text-transform: none;
+    background-color: #ffffff;
+  }
+
+  &__label {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: $mobile-width;
+    padding: 0 $mobile-padding;
+    margin-bottom: 13px;
+    box-sizing: border-box;
+    color: #222222;
+  }
+
+  &__input {
+    flex-grow: 1;
+    padding: 10px 15px;
+    margin-left: 16px;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    color: $light-black;
+    text-transform: uppercase;
+    border: 1px solid rgba(205, 205, 205, 0.5);
+  }
+
+  &__input::placeholder {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    color: $light-black;
+    text-transform: uppercase;
+  }
+}
