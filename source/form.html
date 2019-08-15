@@ -36,7 +36,7 @@
       </nav>
     </header>
     <main class="main">
-      <h1 class="main__title">Подбор программы</h1>
+      <h1 class="main__title main__title--padding">Подбор программы</h1>
       <p class="main__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
       <form class="forms" method="get" action="https://echo.htmlacademy.ru">
         <fieldset class="form form-info">
@@ -80,16 +80,18 @@
         </fieldset>
         <fieldset class="form form-contact">
           <legend class="form__title form-contact__title">
-              Контактные данные (владельца кота)
+            Контактные данные (владельца кота)
           </legend>
-          <label class="form__label form-contact__label--email">
-            E-mail:*
-            <input class="form__input" type="text" name="email" placeholder="kuklachev@gmail.com">
-          </label>
-          <label class="form__label form-contact__label--phone">
-            Телефон:*
-            <input class="form__input" type="text" name="phone" placeholder="8 (960) 900-60-90">
-          </label>
+          <div class="form-container">
+            <label class="form__label form-contact__label--email">
+              E-mail:*
+              <input class="form__input" type="text" name="email" placeholder="kuklachev@gmail.com">
+            </label>
+            <label class="form__label form-contact__label--phone">
+              Телефон:*
+              <input class="form__input" type="text" name="phone" placeholder="8 (960) 900-60-90">
+            </label>
+          </div>
         </fieldset>
         <fieldset class="form form-comment">
           <legend class="form__title form-comment__title">
@@ -132,9 +134,11 @@
             </li>
           </ul>
         </fieldset>
-        <button type="submit" class="button forms__button">Отправить заявку</button>
+        <div class="forms-wrapper">
+          <button type="submit" class="button forms__button">Отправить заявку</button>
+          <p class="forms__note">* — Обязательные поля</p>
+        </div>
       </form>
-      <p class="main__note">* — Обязательные поля</p>
     </main>
     <footer class="footer">
       <div class="address">

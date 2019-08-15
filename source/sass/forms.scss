@@ -6,4 +6,44 @@
     line-height: 20px;
     text-transform: uppercase;
   }
+
+  &__note {
+    margin: 0;
+    margin-bottom: 34px;
+    line-height: 16px;
+    color: $light-black;
+    text-align: center;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .forms {
+    &__button {
+      width: 283px;
+      margin: 0;
+      font-size: 20px;
+    }
+
+    &__note {
+      width: 286px;
+      font-size: 16px;
+      text-align: left;
+    }
+  }
+}
+
+@media (min-width:$desktop-width) {
+  .forms {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &__button {
+      width: 568px;
+    }
+
+    &__note {
+      width: 570px;
+    }
+  }
 }

@@ -1,3 +1,18 @@
 .form-info {
   padding-bottom: 10px;
 }
+
+@media (min-width: $tablet-width) {
+  .form-info {
+    padding-bottom: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-info {
+    width: 570px;
+    padding-left: $desktop-padding;
+    padding-bottom: 50px;
+  }
+}
+

@@ -42,3 +42,46 @@
     text-transform: uppercase;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .form-comment {
+    padding: 0 $tablet-padding;
+    margin-bottom: 50px;
+
+    &__title {
+      width: 180px;
+      padding: 0 40px 70px;
+      margin-left: 0;
+    }
+
+    &__textarea {
+      width: 586px;
+      padding: 20px;
+      margin: 0 40px;
+      font-size: 20px;
+      line-height: 20px;
+    }
+
+    &__textarea::placeholder {
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-comment {
+    &__title {
+      width: 180px;
+      padding: 0 $desktop-padding;
+      padding-bottom: 70px;
+      margin-left: -$desktop-padding;
+    }
+
+    &__textarea {
+      width: 1180px;
+      padding: 20px;
+      margin: 0;
+    }
+  }
+}

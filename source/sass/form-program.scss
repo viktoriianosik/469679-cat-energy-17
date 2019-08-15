@@ -28,3 +28,11 @@
     border-radius: 50%;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .form-program {
+    width: 286px;
+    padding-bottom: 55px;
+    box-sizing: border-box;
+  }
+}

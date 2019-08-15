@@ -46,3 +46,52 @@
     text-transform: uppercase;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .form {
+    width: $tablet-width;
+    padding: 0 $tablet-padding;
+    box-sizing: border-box;
+    font-size: 20px;
+    line-height: 20px;
+
+    &__title {
+      padding: 28px 40px 33px;
+      font-size: 36px;
+      line-height: 36px;
+    }
+
+    &__label {
+      width: 100%;
+      padding: 0 40px;
+      margin-bottom: 20px;
+    }
+
+    &__input {
+      padding: 15px 20px;
+      font-size: 20px;
+      line-height: 20px;
+    }
+
+    &__input::placeholder {
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form {
+    width: $desktop-width;
+    padding: 0;
+
+    &__title {
+      padding: 28px $desktop-padding 33px;
+    }
+
+    &__label {
+      width: 570px;
+      padding: 0;
+    }
+  }
+}

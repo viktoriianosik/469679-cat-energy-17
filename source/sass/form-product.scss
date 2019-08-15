@@ -26,3 +26,17 @@
     background: url("../img/icon-tick.svg") no-repeat 0 0;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .form-product {
+    width: 286px;
+    padding-bottom: 55px;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-product {
+    width: 245px;
+  }
+}

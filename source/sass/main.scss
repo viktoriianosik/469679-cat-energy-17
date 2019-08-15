@@ -19,14 +19,6 @@
     margin: 0;
     text-transform: uppercase;
   }
-
-  &__note {
-    margin: 0;
-    margin-bottom: 34px;
-    line-height: 16px;
-    color: $light-black;
-    text-align: center;
-  }
 }
 
 @media (min-width: $tablet-width) {
@@ -39,6 +31,17 @@
       font-size: 60px;
       border-top: none;
     }
+
+    &__title--padding {
+      padding-bottom: 50px;
+    }
+
+    &__text {
+      width: 325px;
+      padding: 0 60px 65px;
+      font-size: 20px;
+      line-height: 30px;
+    }
   }
 }
 
@@ -48,6 +51,14 @@
       width: $desktop-width;
       padding: 0 $desktop-padding 163px;
       box-sizing: border-box;
+    }
+
+    &__title--padding {
+      padding-bottom: 50px;
+    }
+
+    &__text {
+      padding: 0 $desktop-padding 65px;
     }
   }
 }

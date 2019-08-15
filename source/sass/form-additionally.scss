@@ -17,3 +17,18 @@
     padding-bottom: 43px;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .form-additionally {
+    &__title {
+      width: 212px;
+      padding-bottom: 63px;
+    }
+  }
+
+  .form-additionally .form-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}

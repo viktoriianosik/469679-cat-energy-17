@@ -36,3 +36,26 @@
     background: url("../img/icon-phone.svg") no-repeat 0 0;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .form-contact {
+    margin-bottom: 50px;
+
+    &__title {
+      width: 512px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-contact {
+    display: flex;
+    justify-content: space-between;
+
+    &__label--email,
+    &__label--phone {
+      padding: 0 $desktop-padding;
+      box-sizing: initial;
+    }
+  }
+}
