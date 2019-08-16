@@ -1,9 +1,11 @@
 .main {
+  width: $mobile-width;
+  margin: 0 auto;
   text-align: left;
 
   &__title {
     width: $mobile-width;
-    margin: 0 auto;
+    margin: 0;
     padding: 15px $mobile-padding 26px;
     box-sizing: border-box;
     font-size: 36px;
@@ -23,6 +25,8 @@
 
 @media (min-width: $tablet-width) {
   .main {
+    width: $tablet-width;
+
     &__title {
       width: $tablet-width;
       padding: 0 $tablet-padding 163px;
@@ -33,12 +37,12 @@
     }
 
     &__title--padding {
-      padding-bottom: 50px;
+      padding-bottom: 53px;
     }
 
     &__text {
       width: 325px;
-      padding: 0 60px 65px;
+      padding: 0 70px 65px;
       font-size: 20px;
       line-height: 30px;
     }
@@ -47,6 +51,8 @@
 
 @media (min-width: $desktop-width) {
   .main {
+    width: $desktop-width;
+
     &__title {
       width: $desktop-width;
       padding: 0 $desktop-padding 163px;
@@ -54,7 +60,7 @@
     }
 
     &__title--padding {
-      padding-bottom: 50px;
+      padding-bottom: 53px;
     }
 
     &__text {

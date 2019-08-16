@@ -38,9 +38,13 @@
 @media (min-width: $desktop-width) {
   .header {
     width: $desktop-width;
-    margin: 0 auto;
+    margin: 0 auto 34px;
     padding: 53px $desktop-padding 71px;
     box-sizing: border-box;
+
+    &--margin {
+      margin-bottom: 0;
+    }
 
     &__image {
       width: 203px;

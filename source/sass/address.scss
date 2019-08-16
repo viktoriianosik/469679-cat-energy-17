@@ -8,6 +8,11 @@
   font-size: 14px;
   line-height: 20px;
   text-align: left;
+  background-color: #ffffff;
+
+  &--background-color {
+    background-color: $grey;
+  }
 
   &__title {
     width: 125px;
@@ -15,6 +20,7 @@
     font-size: 16px;
     font-weight: 400;
     text-transform: uppercase;
+    white-space: pre-line;
   }
 
   &__text {
@@ -28,7 +34,7 @@
 @media (min-width: $tablet-width) {
   .address {
     width: 100%;
-    padding: 67px 71px 60px;
+    padding: 63px 71px 60px;
 
     &__title {
       width: 155px;
@@ -55,9 +61,13 @@
     top: 95px;
     left: $desktop-padding;
     width: 570px;
-    padding: 67px 90px 60px 69px;
+    padding: 70px 90px 60px 75px;
     box-sizing: border-box;
     background-color: #ffffff;
     z-index: 10;
+
+    &__text {
+      text-align: left;
+    }
   }
 }

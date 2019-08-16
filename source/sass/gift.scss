@@ -6,9 +6,8 @@
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
-  background-color: $green;
   background: url("../img/gift-photo-mobile@1x.jpg") no-repeat 0 0;
-
+  background-color: $green;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/gift-photo-mobile@2x.jpg");
@@ -16,11 +15,12 @@
   }
 
   &__text {
-    width: 160px;
+    width: 161px;
     margin: 0;
     text-align: center;
     padding-top: 190px;
     padding-left: 60px;
+    white-space: pre-line;
   }
 
   &::before {
@@ -45,9 +45,14 @@
       background-size: 708px auto;
     }
 
+    &::before {
+      top: 61px;
+      left: 90px;
+    }
+
     &__text {
       text-align: left;
-      padding-top: 75px;
+      padding-top: 67px;
       padding-left: 425px;
     }
   }

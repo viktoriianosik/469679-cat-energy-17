@@ -1,5 +1,5 @@
 .form-info {
-  padding-bottom: 10px;
+  padding-bottom: 5px;
 }
 
 @media (min-width: $tablet-width) {
@@ -12,7 +12,6 @@
   .form-info {
     width: 570px;
     padding-left: $desktop-padding;
-    padding-bottom: 50px;
+    padding-bottom: 0;
   }
 }
-

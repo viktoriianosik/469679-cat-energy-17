@@ -8,13 +8,17 @@
   }
 
   &__input + .form-program__input-new {
-  position: absolute;
-  top: -7px;
-  left: 0;
-  width: 29px;
-  height: 29px;
-  border: 1px solid $grey-border;
-  border-radius: 50%;
+    position: absolute;
+    top: -7px;
+    left: 0;
+    width: 29px;
+    height: 29px;
+    border: 1px solid $grey-border;
+    border-radius: 50%;
+  }
+
+  &__input:hover + .form-program__input-new {
+    border-color: #bababa;
   }
 
   &__input:checked + .form-program__input-new::before {
@@ -32,7 +36,20 @@
 @media (min-width: $tablet-width) {
   .form-program {
     width: 286px;
-    padding-bottom: 55px;
+    padding-bottom: 32px;
     box-sizing: border-box;
+
+    &__input + .form-program__input-new {
+      left: -13px;
+      width: 38px;
+      height: 38px;
+    }
+
+    &__input:checked + .form-program__input-new::before {
+      top: 10px;
+      left: 10px;
+      width: 18px;
+      height: 18px;
+    }
   }
 }

@@ -3,7 +3,7 @@
   margin: 0;
   list-style: none;
 
-  &--border{
+  &--border {
     border-top: 1px solid #ededed;
     border-bottom: 1px solid #ededed;
   }
@@ -16,9 +16,9 @@
 @media (min-width: $tablet-width) {
   .form-list {
     width: 630px;
-    padding: 30px $tablet-padding;
+    padding: 37px 43px;
     box-sizing: border-box;
-    margin:  0 auto;
+    margin: 0 auto;
 
     &--border {
       border-left: 1px solid #ededed;
@@ -31,9 +31,9 @@
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
   .form-list {
     width: $desktop-width;
-    padding: 30px $desktop-padding;
+    padding: 35px $desktop-padding;
   }
 }

@@ -58,6 +58,12 @@
     background: url("../img/icon-right-arrow-long.svg");
   }
 
+  &__link:hover::after {
+    width: 34px;
+    height: 12px;
+    background: url("../img/icon-right-arrow-verylong.svg");
+  }
+
   &__link:focus {
     opacity: 0.3;
   }

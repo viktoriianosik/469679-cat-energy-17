@@ -61,7 +61,9 @@ gulp.task("sprite", function () {
     "source/img/icon-vk.svg",
     "source/img/icon-fb.svg",
     "source/img/icon-insta.svg",
-    "source/img/htmlacademy.svg"
+    "source/img/htmlacademy.svg",
+    "source/img/icon-mail.svg",
+    "source/img/icon-phone.svg"
   ], {
     base: "source"
   })

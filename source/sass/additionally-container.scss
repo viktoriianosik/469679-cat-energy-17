@@ -4,11 +4,6 @@
   align-items: center;
 }
 
-@media (min-width: $tablet-width) {
-  .additionally-container {
-    width: 230px;
-  }
-}
 
 @media (min-width: $desktop-width) {
   .additionally-container {

@@ -21,7 +21,7 @@
     align-items: center;
     width: $mobile-width;
     padding: 0 $mobile-padding;
-    margin-bottom: 13px;
+    margin-bottom: 20px;
     box-sizing: border-box;
     color: #222222;
   }
@@ -29,7 +29,7 @@
   &__input {
     flex-grow: 1;
     padding: 10px 15px;
-    margin-left: 16px;
+    margin-left: 12px;
     font-family: "Oswald", "Arial", sans-serif;
     font-size: 16px;
     line-height: 18px;
@@ -44,6 +44,23 @@
     line-height: 18px;
     color: $light-black;
     text-transform: uppercase;
+  }
+
+  &__input:hover {
+    border-color: $grey-border;
+  }
+
+  &__input:active {
+    border: 2px solid $light-black;
+  }
+
+  &__input:focus + .form-contact__mail,
+  &__input:focus + .form-contact__phone {
+    fill: $green;
+  }
+
+  &__input--error {
+    border-color: #ff8282;
   }
 }
 
@@ -68,7 +85,8 @@
     }
 
     &__input {
-      padding: 15px 20px;
+      padding: 10px 18px;
+      margin-left: 18px;
       font-size: 20px;
       line-height: 20px;
     }

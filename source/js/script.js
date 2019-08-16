@@ -12,3 +12,18 @@ navigation.addEventListener("click", function() {
     navigation.classList.remove("navigation--opened");
   }
 })
+
+var form = document.querySelector(".forms");
+var weightForm = form.querySelector("[name=weight]");
+var emailForm = form.querySelector("[name=email]");
+var phoneForm = form.querySelector("[name=phone]");
+var nameForm = form.querySelector("[name=name]");
+
+form.addEventListener("submit", function (evt) {
+  if (!nameForm.value || !mailForm.value || !weightForm.value || !phoneForm.value) {
+    evt.preventDefault();
+    form.classList.remove("form__input--error");
+    form.offsetWidth = form.offsetWidth;
+    form.classList.add ("form__input--error");
+  }
+});

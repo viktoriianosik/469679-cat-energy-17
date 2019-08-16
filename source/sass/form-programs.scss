@@ -1,16 +1,16 @@
+@media (min-width: $tablet-width) {
+  .form-programs {
+    margin-bottom: 48px;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .form-programs {
-    width: 570px;
-    padding-bottom: 50px;
+    width: 610px;
+    padding-right: $desktop-padding;
   }
 
-  @media (min-width:$desktop-width) {
-    .form-programs {
-      padding-right: $desktop-padding;
-    }
-
-    .form-programs .form-list{
-      width: 570px;
-    }
+  .form-programs .form-list {
+    width: 570px;
   }
 }

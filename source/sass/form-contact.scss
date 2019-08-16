@@ -16,33 +16,44 @@
     width: 185px;
   }
 
-  &__label--email::after {
-    content: "";
+  &__mail {
     position: absolute;
-    top: 17px;
+    top: 15px;
     right: 35px;
     width: 18px;
     height: 14px;
-    background: url("../img/icon-mail.svg") no-repeat 0 0;
   }
 
-  &__label--phone::after {
-    content: "";
+  &__phone {
     position: absolute;
-    top: 14px;
+    top: 11px;
     right: 33px;
     width: 21px;
     height: 21px;
-    background: url("../img/icon-phone.svg") no-repeat 0 0;
   }
 }
 
 @media (min-width: $tablet-width) {
   .form-contact {
-    margin-bottom: 50px;
+    margin-bottom: 43px;
+
+    &::before {
+      top: 47px;
+    }
 
     &__title {
       width: 512px;
+      margin-bottom: 42px;
+    }
+
+    &__mail {
+      top: 19px;
+      right: 55px;
+    }
+
+    &__phone {
+      top: 16px;
+      right: 52px;
     }
   }
 }
