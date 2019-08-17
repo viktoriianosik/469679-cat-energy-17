@@ -8,6 +8,9 @@
     font-size: 16px;
     line-height: 20px;
     text-transform: uppercase;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
   }
 
   &__range {
@@ -43,6 +46,14 @@
       font-size: 20px;
       padding-bottom: 6px;
       border-bottom: 1px dashed #b8b8b8;
+    }
+
+    &__state:hover {
+      border-bottom: 1px solid #989898;
+    }
+
+    &__state:focus {
+      border-bottom: none;
     }
 
     &__range {
@@ -83,6 +94,6 @@
 
 @media (min-width: $desktop-width) {
   .example-change {
-    left: 690px;
+    left: 670px;
   }
 }

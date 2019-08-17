@@ -1,7 +1,7 @@
 .example-before {
   &__image {
     margin-bottom: 27px;
-    width: 311px;
+    width: 280px;
     height: 232px;
     object-fit: cover;
   }
@@ -10,18 +10,17 @@
 @media (min-width: $tablet-width) {
   .example-before {
     position: relative;
-    width: 50%;
+    width: 100%;
     min-height: 462px;
     padding-left: $tablet-padding;
     box-sizing: border-box;
     background-color: $grey;
 
     &__image {
-      width: 338px;
+      width: 636px;
       height: 499px;
       padding-left: 16px;
       margin-top: -164px;
-      object-position: -1% 0;
     }
   }
 }
@@ -29,16 +28,15 @@
 @media (min-width: $desktop-width) {
   .example-before {
     position: relative;
-    width: 325px;
-    padding-left: 0;
+    width: 50%;
+    padding: 0;
+    padding-right: $desktop-padding;
+    box-sizing: border-box;
 
     &__image {
-      width: 365px;
       height: 499px;
       padding-left: 0;
       margin-top: -180px;
-      object-fit: cover;
-      object-position: 10% 0;
     }
   }
 }

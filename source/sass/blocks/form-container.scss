@@ -2,5 +2,8 @@
   .form-container {
     display: flex;
     justify-content: space-between;
+    width: $desktop-width;
+    padding: 0 $desktop-padding;
+    box-sizing: border-box;
   }
 }

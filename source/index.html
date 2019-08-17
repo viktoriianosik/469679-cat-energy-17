@@ -5,6 +5,8 @@
     <meta name="viewport" content="width = device-width, initial-scale = 1">
     <title>HTML Academy: Кэт энерджи</title>
     <link href="css/style.min.css" rel="stylesheet">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
   </head>
   <body>
     <div style="display:none">
@@ -123,9 +125,9 @@
             </picture>
         </div>
         <div class="example-change">
-          <span class="example-change__state">Было</span>
+          <button class="example-change__state">Было</button>
           <span class="example-change__range"></span>
-          <span class="example-change__state">Стало</span>
+          <button class="example-change__state">Стало</button>
         </div>
       </section>
     </main>
@@ -145,7 +147,7 @@
         <img class="map__image" src="img/bg-map-mobile@1x.png" width="320" height="360" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
       </div>
       <div class="container">
-        <a class="footer__logo">
+        <a class="footer__logo" href="#">
           <img class="footer__logo-image" src="img/logo-footer.svg" width="128" height="24" alt="Логотип интернет-магазина CAT ENERGY">
         </a>
         <ul class="social">
@@ -185,5 +187,6 @@
       </div>
     </footer>
     <script src="js/script.js"></script>
+    <script src="js/picturefill.js"></script>
   </body>
 </html>
