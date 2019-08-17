@@ -20,3 +20,8 @@ trim_trailing_whitespace = true
 
 [*.md]
 trim_trailing_whitespace = false
+
+[*.min.*]
+indent_style = ignore
+insert_final_newline = false
+trim_trailing_whitespace = false
