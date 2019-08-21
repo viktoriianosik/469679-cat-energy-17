@@ -11,29 +11,32 @@
     background-color: $green;
     z-index: -1;
   }
+}
 
-  &__title {
-    position: relative;
-    width: 183px;
+.form-contact__title {
+  position: relative;
+  width: 183px;
+}
+
+.form-contact__mail {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  width: 18px;
+  height: 14px;
+
+  &__mail--error {
+    fill: #ff8282;
   }
+}
 
-  &__mail {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    width: 18px;
-    height: 14px;
-  }
+.form-contact__phone {
+  position: absolute;
+  top: 11px;
+  right: 33px;
+  width: 21px;
+  height: 21px;
 
-  &__phone {
-    position: absolute;
-    top: 11px;
-    right: 33px;
-    width: 21px;
-    height: 21px;
-  }
-
-  &__mail--error,
   &__phone--error {
     fill: #ff8282;
   }
@@ -47,21 +50,21 @@
       top: 47px;
       width: $tablet-width;
     }
+  }
 
-    &__title {
-      width: 513px;
-      margin-bottom: 42px;
-    }
+  .form-contact__title {
+    width: 513px;
+    margin-bottom: 42px;
+  }
 
-    &__mail {
-      top: 19px;
-      right: 55px;
-    }
+  .form-contact__mail {
+    top: 19px;
+    right: 55px;
+  }
 
-    &__phone {
-      top: 16px;
-      right: 52px;
-    }
+  .form-contact__phone {
+    top: 16px;
+    right: 52px;
   }
 }
 
@@ -70,21 +73,21 @@
     &::before {
       width: $desktop-width;
     }
+  }
 
-    &__label--email,
-    &__label--phone {
-      padding: 0 $desktop-padding;
-      box-sizing: initial;
-    }
+  .form-contact__label--email,
+  .form-contact__label--phone {
+    padding: 0 $desktop-padding;
+    box-sizing: initial;
+  }
 
-    &__mail {
-      top: 17px;
-      right: 21px;
-    }
+  .form-contact__mail {
+    top: 17px;
+    right: 21px;
+  }
 
-    &__phone {
-      top: 14px;
-      right: 18px;
-    }
+  .form-contact__phone {
+    top: 14px;
+    right: 18px;
   }
 }

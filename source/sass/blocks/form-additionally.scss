@@ -11,24 +11,22 @@
     background-color: $green;
     z-index: -1;
   }
+}
 
-  &__title {
-    width: 140px;
-    padding-top: 22px;
-    padding-bottom: 41px;
-  }
+.form-additionally__title {
+  width: 140px;
+  padding-top: 22px;
+  padding-bottom: 41px;
 }
 
 @media (min-width: $tablet-width) {
-  .form-additionally {
-    &__title {
-      width: 212px;
-      padding-bottom: 63px;
-    }
+  .form-additionally::before {
+    top: 43px;
+  }
 
-    &::before {
-      top: 43px;
-    }
+  .form-additionally__title {
+    width: 212px;
+    padding-bottom: 63px;
   }
 
   .form-additionally .form-list {

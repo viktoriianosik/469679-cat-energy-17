@@ -2,69 +2,69 @@
   width: $mobile-width;
   margin: 0 auto;
   text-align: left;
+}
 
-  &__title {
-    width: $mobile-width;
-    margin: 0;
-    padding: 15px $mobile-padding 26px;
-    box-sizing: border-box;
-    font-size: 36px;
-    line-height: 60px;
-    font-weight: 400;
-    color: $black;
-    border-top: 1px solid $dark-grey;
-  }
+.main__title {
+  width: $mobile-width;
+  margin: 0;
+  padding: 15px $mobile-padding 26px;
+  box-sizing: border-box;
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: 400;
+  color: $black;
+  border-top: 1px solid $dark-grey;
+}
 
-  &__text {
-    width: 230px;
-    padding: 0 $mobile-padding 40px;
-    margin: 0;
-    text-transform: uppercase;
-  }
+.main__text {
+  width: 230px;
+  padding: 0 $mobile-padding 40px;
+  margin: 0;
+  text-transform: uppercase;
 }
 
 @media (min-width: $tablet-width) {
   .main {
     width: $tablet-width;
+  }
 
-    &__title {
-      width: $tablet-width;
-      padding: 0 $tablet-padding 163px;
-      margin: 0 auto;
-      box-sizing: border-box;
-      font-size: 60px;
-      border-top: none;
-    }
+  .main__title {
+    width: $tablet-width;
+    padding: 0 $tablet-padding 163px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-size: 60px;
+    border-top: none;
 
-    &__title--padding {
+    &--padding {
       padding-bottom: 53px;
     }
+  }
 
-    &__text {
-      width: 325px;
-      padding: 0 70px 65px;
-      font-size: 20px;
-      line-height: 30px;
-    }
+  .main__text {
+    width: 325px;
+    padding: 0 70px 65px;
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .main {
     width: $desktop-width;
+  }
 
-    &__title {
-      width: $desktop-width;
-      padding: 0 $desktop-padding 163px;
-      box-sizing: border-box;
-    }
+  .main__title {
+    width: $desktop-width;
+    padding: 0 $desktop-padding 163px;
+    box-sizing: border-box;
 
-    &__title--padding {
+    &--padding {
       padding-bottom: 53px;
     }
+  }
 
-    &__text {
-      padding: 0 $desktop-padding 65px;
-    }
+  .main__text {
+    padding: 0 $desktop-padding 65px;
   }
 }

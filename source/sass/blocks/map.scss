@@ -13,59 +13,55 @@
     background-size: cover;
     z-index: 2;
   }
+}
 
-  &__iframe {
-    position: relative;
-    width: $mobile-width;
-    height: 360px;
-    z-index: 1;
-  }
+.map__iframe {
+  position: relative;
+  width: $mobile-width;
+  height: 360px;
+  z-index: 1;
+}
 
-  &__image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: $mobile-width;
-    height: 360px;
-  }
+.map__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: $mobile-width;
+  height: 360px;
 }
 
 @media (min-width: $tablet-width) {
-  .map {
-    &::before {
-      top: 145px;
-      left: 320px;
-      width: 113px;
-      height: 106px;
-    }
+  .map::before {
+    top: 145px;
+    left: 320px;
+    width: 113px;
+    height: 106px;
+  }
 
-    &__iframe {
-      width: $tablet-width;
-      height: 400px;
-    }
+  .map__iframe {
+    width: $tablet-width;
+    height: 400px;
+  }
 
-    &__image {
-      width: $tablet-width;
-      height: 400px;
-    }
+  .map__image {
+    width: $tablet-width;
+    height: 400px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .map {
-    &::before {
-      top: 100px;
-      left: 320px;
-      width: 113px;
-      height: 106px;
-    }
+  .map::before {
+    top: 100px;
+    left: 320px;
+    width: 113px;
+    height: 106px;
+  }
 
-    &__iframe {
-      width: $desktop-width;
-    }
+  .map__iframe {
+    width: $desktop-width;
+  }
 
-    &__image {
-      width: $desktop-width;
-    }
+  .map__image {
+    width: $desktop-width;
   }
 }

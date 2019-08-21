@@ -4,25 +4,25 @@
   padding: 0 $mobile-padding 45px;
   box-sizing: border-box;
   text-align: left;
+}
 
-  &__title {
-    margin: 0;
-    font-size: 36px;
-    line-height: 60px;
-    font-weight: 400;
-  }
+.advantages__title {
+  margin: 0;
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: 400;
+}
 
-  &__text {
-    position: relative;
-    margin: 0;
-    padding: 27px 6px 0 80px;
-    font-family: "Arial", sans-serif;
-    font-size: 14px;
-    line-height: 18px;
-    color: $light-black;
-  }
+.advantages__text {
+  position: relative;
+  margin: 0;
+  padding: 27px 6px 0 80px;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: $light-black;
 
-  &__text::after {
+  &::after {
     content: "";
     position: absolute;
     top: 26px;
@@ -32,7 +32,7 @@
     background-color: $green;
   }
 
-  &__text--leaf::before {
+  &--leaf::before {
     content: "";
     position: absolute;
     top: 33px;
@@ -48,7 +48,7 @@
     }
   }
 
-  &__text--powder::before {
+  &--powder::before {
     content: "";
     position: absolute;
     top: 30px;
@@ -64,7 +64,7 @@
     }
   }
 
-  &__text--dining::before {
+  &--dining::before {
     content: "";
     position: absolute;
     top: 30px;
@@ -80,7 +80,7 @@
     }
   }
 
-  &__text--clock::before {
+  &--clock::before {
     content: "";
     position: absolute;
     top: 29px;
@@ -95,10 +95,10 @@
       background-size: 50px 50px;
     }
   }
+}
 
-  &__number {
-    display: none;
-  }
+.advantages__number {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
@@ -110,76 +110,76 @@
     padding: 0 $tablet-padding;
     box-sizing: border-box;
     text-align: left;
+  }
 
-    &__title {
-      font-size: 60px;
-      padding-bottom: 45px;
-    }
+  .advantages__title {
+    font-size: 60px;
+    padding-bottom: 45px;
+  }
 
-    &__wrapper {
-      display: flex;
-      flex-wrap: wrap;
-      width: 100%;
-    }
+  .advantages__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
 
-    &__text {
-      position: relative;
-      width: 245px;
-      margin: 0;
-      padding: 140px 0 105px;
-      font-size: 16px;
-      line-height: 24px;
-    }
+  .advantages__text {
+    position: relative;
+    width: 245px;
+    margin: 0;
+    padding: 140px 0 105px;
+    font-size: 16px;
+    line-height: 24px;
 
-    &__text:nth-child(odd) {
+    &:nth-child(odd) {
       margin-right: 140px;
     }
 
-    &__text::after {
+    &::after {
       top: 27px;
       width: 80px;
       height: 80px;
     }
 
-    &__text--leaf::before {
+    &--leaf::before {
       top: 42px;
       left: 14px;
       width: 40px;
       height: 40px;
     }
 
-    &__text--powder::before {
+    &--powder::before {
       top: 42px;
       left: 13px;
       width: 40px;
       height: 40px;
     }
 
-    &__text--dining::before {
+    &--dining::before {
       top: 41px;
       left: 14px;
       width: 40px;
       height: 40px;
     }
 
-    &__text--clock::before {
+    &--clock::before {
       top: 41px;
       left: 13px;
       width: 40px;
       height: 40px;
     }
+  }
 
-    &__number {
-      display: block;
-      position: absolute;
-      top: -10px;
-      right: 0;
-      font-family: "Oswald", "Arial", sans-serif;
-      font-size: 281px;
-      line-height: 281px;
-      color: $grey;
-      z-index: -1;
-    }
+  .advantages__number {
+    display: block;
+    position: absolute;
+    top: -10px;
+    right: 0;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 281px;
+    line-height: 281px;
+    color: $grey;
+    z-index: -1;
   }
 }
 
@@ -188,14 +188,14 @@
     width: $desktop-width;
     padding: 0 $desktop-padding 5px;
     box-sizing: border-box;
+  }
 
-    &__text:nth-child(odd),
-    &__text {
-      margin-right: 80px;
-    }
+  .advantages__text:nth-child(odd),
+  .advantages_text {
+    margin-right: 80px;
+  }
 
-    &__text:last-child {
-      margin-right: 0;
-    }
+  .advantages__text:last-child {
+    margin-right: 0;
   }
 }

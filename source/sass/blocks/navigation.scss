@@ -2,35 +2,36 @@
   position: relative;
   margin: 0 auto;
   text-align: center;
+}
 
-  &__list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
+.navigation__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
-  &__link {
-    display: block;
-    padding: 24px 0;
-    font-size: 20px;
-    line-height: 20px;
-    font-weight: 500;
-    text-transform: uppercase;
-    color: $black;
-    border-top: 1px solid $dark-grey;
-  }
+.navigation__link {
+  display: block;
+  padding: 24px 0;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: $black;
+  border-top: 1px solid $dark-grey;
 
-  &__item:last-child &__link {
-    border-bottom: 1px solid $dark-grey;
-  }
 
-  &__link:hover {
+  &:hover {
     opacity: 0.6;
   }
 
-  &__link:focus {
+  &:focus {
     opacity: 0.3;
   }
+}
+
+.navigation__item:last-child .navigation__link {
+  border-bottom: 1px solid $dark-grey;
 }
 
 .navigation--closed .navigation-toggle::before {
@@ -72,58 +73,60 @@
   .navigation--nojs .navigation-toggle {
     display: none;
   }
+
+  .navigation--nojs .navigation__item {
+    display: block;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .navigation {
     margin: 0;
+  }
 
-    &__list {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: flex-end;
-      width: 515px;
-    }
+  .navigation__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    width: 515px;
+  }
 
-    &__link {
-      padding: 18px 0 6px;
-      margin-left: 35px;
-      font-size: 18px;
-      line-height: 25px;
-      font-weight: 400;
-      border-top: none;
-    }
+  .navigation__link {
+    padding: 18px 0 6px;
+    margin-left: 35px;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 400;
+    border-top: none;
 
-    &__item:last-child &__link {
-      border-bottom: 2px solid transparent;
-    }
-
-    &__item:last-child &__link--active {
+    &--active {
       border-bottom: 2px solid $green;
     }
+  }
 
-    &__link--active {
-      border-bottom: 2px solid $green;
-    }
+  .navigation__item:last-child .navigation__link {
+    border-bottom: 2px solid transparent;
+  }
+
+  .navigation__item:last-child .navigation__link--active {
+    border-bottom: 2px solid $green;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .navigation {
-    &__list {
-      width: 690px;
-    }
+  .navigation__list {
+    width: 690px;
 
-    &__list--color .navigation__link {
+    &--color .navigation__link {
       color: #ffffff;
     }
 
-    &__list--color .navigation__link--active {
+    &--color .navigation__link--active {
       border-color: #ffffff;
     }
+  }
 
-    &__link {
-      font-size: 20px;
-    }
+  .navigation__link {
+    font-size: 20px;
   }
 }

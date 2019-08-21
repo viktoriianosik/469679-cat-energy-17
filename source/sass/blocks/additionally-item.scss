@@ -5,60 +5,62 @@
   &:last-child {
     border-bottom: 1px solid $grey-border;
   }
-
-  &__name {
-    padding-bottom: 12px;
-    margin: 0;
-    font-size: 16px;
-    font-weight: 400;
-    text-transform: uppercase;
-    color: #222222;
-  }
-
-  &__size,
-  &__cost {
-    margin: 0;
-    padding-bottom: 14px;
-    font-family: "Arial", sans-serif;
-    font-size: 14px;
-    line-height: 14px;
-    color: $light-black;
-  }
-
-  &__order {
-    font-size: 16px;
-    line-height: 20px;
-    text-transform: uppercase;
-  }
 }
+
+.additionally-item__name {
+  padding-bottom: 12px;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.additionally-item__size,
+.additionally-item__cost {
+  margin: 0;
+  padding-bottom: 14px;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  color: $light-black;
+}
+
+.additionally-item__order {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
 
 @media (min-width: $tablet-width) {
   .additionally-item {
     padding: 26px 40px;
     border-left: 1px solid $grey-border;
     border-right: 1px solid $grey-border;
+  }
 
-    &__name {
-      padding-bottom: 25px;
-      font-size: 20px;
-      line-height: 20px;
-    }
+  .additionally-item__name {
+    padding-bottom: 25px;
+    font-size: 20px;
+    line-height: 20px;
+  }
 
-    &__size,
-    &__cost {
-      font-size: 16px;
-      line-height: 20px;
-    }
+  .additionally-item__size,
+  .additionally-item__cost {
+    font-size: 16px;
+    line-height: 20px;
+  }
 
-    &__size {
-      padding-right: 55px;
-    }
+  .additionally-item__size {
+    padding-right: 55px;
+  }
 
-    &__order {
-      width: 100%;
-    }
+  .additionally-item__order {
+    width: 100%;
   }
 }
+
 
 @media (min-width: $desktop-width) {
   .additionally-item {
@@ -67,20 +69,20 @@
     padding: 16px 0;
     border-left: none;
     border-right: none;
+  }
 
-    &__name {
-      padding-bottom: 0;
-    }
+  .additionally-item__name {
+    padding-bottom: 0;
+  }
 
-    &__size,
-    &__cost {
-      font-size: 16px;
-      line-height: 20px;
-      padding: 0;
-    }
+  .additionally-item__size,
+  .additionally-item__cost {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 0;
+  }
 
-    &__order {
-      width: 245px;
-    }
+  .additionally-item__order {
+    width: 245px;
   }
 }

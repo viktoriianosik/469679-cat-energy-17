@@ -1,10 +1,8 @@
-.example-before {
-  &__image {
-    margin-bottom: 27px;
-    width: 280px;
-    height: 232px;
-    object-fit: cover;
-  }
+.example-before__image {
+  margin-bottom: 27px;
+  width: 280px;
+  height: 232px;
+  object-fit: cover;
 }
 
 @media (min-width: $tablet-width) {
@@ -15,13 +13,13 @@
     padding-left: $tablet-padding;
     box-sizing: border-box;
     background-color: $grey;
+  }
 
-    &__image {
-      width: 636px;
-      height: 499px;
-      padding-left: 16px;
-      margin-top: -164px;
-    }
+  .example-before__image {
+    width: 636px;
+    height: 499px;
+    padding-left: 16px;
+    margin-top: -164px;
   }
 }
 
@@ -32,11 +30,11 @@
     padding: 0;
     padding-right: $desktop-padding;
     box-sizing: border-box;
+  }
 
-    &__image {
-      height: 499px;
-      padding-left: 0;
-      margin-top: -180px;
-    }
+  .example-before__image {
+    height: 499px;
+    padding-left: 0;
+    margin-top: -180px;
   }
 }

@@ -7,34 +7,34 @@
   box-sizing: border-box;
   border-top: 1px solid $dark-grey;
   text-align: center;
+}
 
-  &__wrapper {
-    display: flex;
-  }
+.catalog-item__wrapper {
+  display: flex;
+}
 
-  &__name {
-    width: 75px;
-    margin: 0;
-    padding: 21px 0 10px;
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: 400;
-    text-transform: uppercase;
-    text-align: left;
-    color: $black;
-  }
+.catalog-item__name {
+  width: 75px;
+  margin: 0;
+  padding: 21px 0 10px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: left;
+  color: $black;
+}
 
-  &__image {
-    width: 140px;
-    height: 144px;
-  }
+.catalog-item__image {
+  width: 140px;
+  height: 144px;
+}
 
-  &__order {
-    margin-bottom: 19px;
-    font-size: 16px;
-    line-height: 20px;
-    text-transform: uppercase;
-  }
+.catalog-item__order {
+  margin-bottom: 19px;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
 }
 
 @media (min-width: $tablet-width) {
@@ -55,36 +55,36 @@
     &:nth-last-child(2) {
       margin-bottom: 70px;
     }
+  }
 
-    &__wrapper {
-      flex-direction: column;
-    }
+  .catalog-item__wrapper {
+    flex-direction: column;
+  }
 
-    &__image {
-      margin: -86px 0 13px;
-      width: 161px;
-      height: 172px;
-      object-fit: cover;
-    }
+  .catalog-item__image {
+    margin: -86px 0 13px;
+    width: 161px;
+    height: 172px;
+    object-fit: cover;
 
-    &__image--big {
+    &--big {
       margin-top: -122px;
       width: 195px;
       height: 208px;
     }
+  }
 
-    &__name {
-      width: 131px;
-      padding-left: 60px;
-      padding-bottom: 21px;
-      font-size: 20px;
-      text-align: center;
-    }
+  .catalog-item__name {
+    width: 131px;
+    padding-left: 60px;
+    padding-bottom: 21px;
+    font-size: 20px;
+    text-align: center;
+  }
 
-    &__order {
-      width: 250px;
-      margin-top: 34px;
-    }
+  .catalog-item__order {
+    width: 250px;
+    margin-top: 34px;
   }
 }
 
@@ -108,13 +108,13 @@
     &:nth-last-child(2) {
       margin-bottom: 140px;
     }
+  }
 
-    &__name {
-      padding-left: 20px;
-    }
+  .catalog-item__name {
+    padding-left: 20px;
+  }
 
-    &__order {
-      width: 170px;
-    }
+  .catalog-item__order {
+    width: 170px;
   }
 }

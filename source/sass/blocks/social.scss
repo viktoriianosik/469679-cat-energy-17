@@ -7,35 +7,35 @@
   margin: 0 auto;
   list-style: none;
   border-bottom: 1px solid $dark-grey;
+}
 
-  &__link {
-    padding-right: 40px;
-    cursor: pointer;
-  }
+.social__link {
+  padding-right: 40px;
+  cursor: pointer;
 
-  &__link:hover .social__logo,
-  &__link:focus .social__logo {
+  &:hover .social__logo,
+  &:focus .social__logo {
     fill: $green;
   }
 
-  &__link:focus .social__logo {
+  &:focus .social__logo {
     opacity: 0.3;
   }
+}
 
-  &__logo--vk {
-    width: 22px;
-    height: 12px;
-  }
+.social__logo--vk {
+  width: 22px;
+  height: 12px;
+}
 
-  &__logo--insta {
-    width: 17px;
-    height: 17px;
-  }
+.social__logo--insta {
+  width: 17px;
+  height: 17px;
+}
 
-  &__logo--fb {
-    width: 10px;
-    height: 19px;
-  }
+.social__logo--fb {
+  width: 10px;
+  height: 19px;
 }
 
 @media (min-width: $tablet-width) {
@@ -44,20 +44,20 @@
     margin: 0;
     padding: 44px 0 62px;
     border-bottom: none;
+  }
 
-    &__logo--vk {
-      width: 30px;
-      height: 16px;
-    }
+  .social__logo--vk {
+    width: 30px;
+    height: 16px;
+  }
 
-    &__logo--insta {
-      width: 23px;
-      height: 23px;
-    }
+  .social__logo--insta {
+    width: 23px;
+    height: 23px;
+  }
 
-    &__logo--fb {
-      width: 14px;
-      height: 28px;
-    }
+  .social__logo--fb {
+    width: 14px;
+    height: 28px;
   }
 }

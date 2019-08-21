@@ -5,11 +5,11 @@
   line-height: 16px;
   text-align: left;
   color: $light-black;
+}
 
-  &__value {
-    text-align: right;
-    padding-left: 2px;
-  }
+.description__value {
+  text-align: right;
+  padding-left: 2px;
 }
 
 @media (min-width: $tablet-width) {
@@ -17,11 +17,11 @@
     width: 245px;
     font-size: 16px;
     border-collapse: collapse;
+  }
 
-    &__item td {
-      padding: 8px 0 6px;
-      border-bottom: 1px solid $dark-grey;
-    }
+  .description__item td {
+    padding: 8px 0 6px;
+    border-bottom: 1px solid $dark-grey;
   }
 }
 

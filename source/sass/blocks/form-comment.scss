@@ -11,27 +11,27 @@
     background-color: $green;
     z-index: -1;
   }
+}
 
-  &__title {
-    width: 120px;
-    padding-top: 11px;
-  }
+.form-comment__title {
+  width: 120px;
+  padding-top: 11px;
+}
 
-  &__textarea {
-    width: 252px;
-    padding: 13px;
-    margin: 0 $mobile-padding;
-    font-family: "Oswald", "Arial", sans-serif;
-    font-size: 16px;
-    line-height: 18px;
-    color: $light-black;
-    text-align: left;
-    text-transform: uppercase;
-    border: 1px solid $grey-border;
-    resize: none;
-  }
+.form-comment__textarea {
+  width: 252px;
+  padding: 13px;
+  margin: 0 $mobile-padding;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: $light-black;
+  text-align: left;
+  text-transform: uppercase;
+  border: 1px solid $grey-border;
+  resize: none;
 
-  &__textarea::placeholder {
+  &::placeholder {
     font-family: "Oswald", "Arial", sans-serif;
     font-size: 16px;
     line-height: 18px;
@@ -45,22 +45,22 @@
   .form-comment {
     padding: 0 $tablet-padding;
     margin-bottom: 41px;
+  }
 
-    &__title {
-      width: 180px;
-      padding: 0 40px 77px;
-      margin-left: 0;
-    }
+  .form-comment__title {
+    width: 180px;
+    padding: 0 40px 77px;
+    margin-left: 0;
+  }
 
-    &__textarea {
-      width: 586px;
-      padding: 17px 20px;
-      margin: 0 40px;
-      font-size: 20px;
-      line-height: 20px;
-    }
+  .form-comment__textarea {
+    width: 586px;
+    padding: 17px 20px;
+    margin: 0 40px;
+    font-size: 20px;
+    line-height: 20px;
 
-    &__textarea::placeholder {
+    &::placeholder {
       font-size: 20px;
       line-height: 20px;
     }
@@ -70,18 +70,18 @@
 @media (min-width: $desktop-width) {
   .form-comment {
     margin-bottom: 47px;
+  }
 
-    &__title {
-      width: 180px;
-      padding: 0 $desktop-padding;
-      padding-bottom: 75px;
-      margin-left: -$desktop-padding;
-    }
+  .form-comment__title {
+    width: 180px;
+    padding: 0 $desktop-padding;
+    padding-bottom: 75px;
+    margin-left: -$desktop-padding;
+  }
 
-    &__textarea {
-      width: 1170px;
-      padding: 15px 25px;
-      margin: 0;
-    }
+  .form-comment__textarea {
+    width: 1170px;
+    padding: 15px 25px;
+    margin: 0;
   }
 }

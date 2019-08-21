@@ -1,40 +1,50 @@
 .forms {
   width: $mobile-width;
   margin: 0 auto;
+}
 
-  &__button {
-    margin: 0 auto 20px;
-    border: none;
-    font-size: 16px;
-    line-height: 20px;
-    text-transform: uppercase;
-  }
+.forms__button {
+  margin: 0 auto 20px;
+  border: none;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
 
-  &__note {
-    margin: 0;
-    margin-bottom: 34px;
-    font-family: "Arila", sans-serif;
-    line-height: 16px;
-    color: $light-black;
-    text-align: center;
-  }
+.forms__note {
+  margin: 0;
+  margin-bottom: 34px;
+  font-family: "Arila", sans-serif;
+  line-height: 16px;
+  color: $light-black;
+  text-align: center;
 }
 
 @media (min-width: $tablet-width) {
   .forms {
     width: $tablet-width;
+  }
 
-    &__button {
-      width: 283px;
-      margin: 0;
-      font-size: 20px;
-    }
+  .forms__button {
+    width: 283px;
+    margin: 0;
+    font-size: 20px;
+  }
 
-    &__note {
-      width: 286px;
-      font-size: 16px;
-      text-align: left;
-    }
+  .forms__note {
+    width: 286px;
+    font-size: 16px;
+    text-align: left;
+  }
+
+  .forms__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: $tablet-width;
+    padding: 0 70px;
+    margin-bottom: 50px;
+    box-sizing: border-box;
   }
 }
 
@@ -44,13 +54,18 @@
     flex-wrap: wrap;
     justify-content: space-between;
     width: $desktop-width;
+  }
 
-    &__button {
-      width: 568px;
-    }
+  .forms__button {
+    width: 568px;
+  }
 
-    &__note {
-      width: 570px;
-    }
+  .forms__note {
+    width: 570px;
+  }
+
+  .forms__wrapper {
+    width: $desktop-width;
+    padding: 10px $desktop-padding;
   }
 }

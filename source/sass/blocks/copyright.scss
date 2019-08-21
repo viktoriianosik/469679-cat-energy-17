@@ -1,43 +1,43 @@
 .copyright {
   position: relative;
   padding: 18px $mobile-padding;
+}
 
-  &__logo {
-    display: block;
-    padding: 9px 0;
-    font-family: "Arial", sans-serif;
-    font-size: 16px;
-    line-height: 16px;
-    color: $light-black;
-    text-align: left;
-  }
+.copyright__logo {
+  display: block;
+  padding: 9px 0;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  color: $light-black;
+  text-align: left;
 
-  &__logo:hover .copyright__image,
-  &__logo:focus .copyright__image {
+  &:hover .copyright__image,
+  &:focus .copyright__image {
     fill: $green;
   }
 
-  &__logo:focus .copyright__image {
+  &:focus .copyright__image {
     opacity: 0.3;
   }
+}
 
-  &__image {
-    position: absolute;
-    top: 17px;
-    right: 10px;
-    width: 45px;
-    height: 40px;
-  }
+.copyright__image {
+  position: absolute;
+  top: 17px;
+  right: 10px;
+  width: 45px;
+  height: 40px;
 }
 
 @media (min-width: $tablet-width) {
   .copyright {
     width: 162px;
     padding: 32px 0 53px;
+  }
 
-    &__image {
-      top: 30px;
-      right: -10px;
-    }
+  .copyright__image {
+    top: 30px;
+    right: -10px;
   }
 }

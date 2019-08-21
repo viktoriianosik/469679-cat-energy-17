@@ -6,29 +6,29 @@
   &:last-child {
     padding-bottom: 0;
   }
+}
 
-  &__input + .form-product__input-new {
-    position: absolute;
-    top: -7px;
-    left: 0;
-    width: 28px;
-    height: 28px;
-    border: 1px solid $grey-border;
-  }
+.form-product__input + .form-product__input-new {
+  position: absolute;
+  top: -7px;
+  left: 0;
+  width: 28px;
+  height: 28px;
+  border: 1px solid $grey-border;
+}
 
-  &__input:hover + .form-product__input-new {
-    border-color: #bababa;
-  }
+.form-product__input:hover + .form-product__input-new {
+  border-color: #bababa;
+}
 
-  &__input:checked + .form-product__input-new::before {
-    content: "";
-    position: absolute;
-    top: 6px;
-    left: 4px;
-    width: 22px;
-    height: 17px;
-    background: url("../img/icon-tick.svg") no-repeat 0 0;
-  }
+.form-product__input:checked + .form-product__input-new::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 4px;
+  width: 22px;
+  height: 17px;
+  background: url("../img/icon-tick.svg") no-repeat 0 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -36,20 +36,20 @@
     width: 286px;
     padding-bottom: 55px;
     box-sizing: border-box;
+  }
 
-    &__input + .form-product__input-new {
-      width: 38px;
-      height: 38px;
-    }
+  .form-product__input + .form-product__input-new {
+    width: 38px;
+    height: 38px;
+  }
 
-    &__input:checked + .form-product__input-new::before {
-      top: 11px;
-      left: 9px;
-    }
+  .form-product__input:checked + .form-product__input-new::before {
+    top: 11px;
+    left: 9px;
+  }
 
-    &__label {
-      padding-left: 14px;
-    }
+  .form-product__label {
+    padding-left: 14px;
   }
 }
 
