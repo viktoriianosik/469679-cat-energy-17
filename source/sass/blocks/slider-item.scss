@@ -1,0 +1,31 @@
+.slider-item {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .slider-item {
+    width: $tablet-width;
+    padding: 0 $tablet-padding 115px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: $grey;
+
+    &--after {
+      background-color: #eaeaea;
+    }
+  }
+
+  .slider-item__image {
+    width: 677px;
+    height: 499px;
+    margin-top: -160px;
+    object-fit: contain;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slider-item {
+    width: 650px;
+    padding: 0 $desktop-padding 120px;
+  }
+}

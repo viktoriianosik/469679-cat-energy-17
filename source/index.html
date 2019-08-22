@@ -87,47 +87,57 @@
         </div>
       </section>
       <section class="example">
-          <h2 class="example__title">Живой пример</h2>
-          <div class="container container--example">
-            <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
-            <div class="example-result">
-              <p class="example-result__text">
-                5 кг
-                <span class="example-result__size">снижение веса</span>
-              </p>
-              <p class="example-result__text">
-                60 дней
-                <span class="example-result__size example-result__size--time">затрачено времени</span>
-              </p>
-            </div>
-            <p class="example__cost">Затраты на питание:
-              <span class="example__sum">15 000 руб.</span>
+        <h2 class="example__title">Живой пример</h2>
+        <div class="container container--example">
+          <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
+          <div class="example-result">
+            <p class="example-result__text">
+              5 кг
+              <span class="example-result__size">снижение веса</span>
+            </p>
+            <p class="example-result__text">
+              60 дней
+              <span class="example-result__size example-result__size--time">затрачено времени</span>
             </p>
           </div>
-        <div class="example-before">
-          <picture>
-            <source type="image/webp" media="(min-width: 1300px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
-            <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@1x.png 2x">
-            <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@1x.png 2x">
-            <img class="example-before__image" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" width="311" height="232" alt="Фото кота до">
-          </picture>
+          <p class="example__cost">Затраты на питание:
+            <span class="example__sum">15 000 руб.</span>
+          </p>
         </div>
-        <div class="example-after">
-            <picture>
-              <source type="image/webp" media="(min-width: 1300px)" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
-              <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@1x.png 2x">
-              <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@1x.png 2x">
-              <img class="example-after__image" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" width="311" height="232" alt="Фото кота до">
-            </picture>
-        </div>
-        <div class="example-change">
-          <button class="example-change__state">Было</button>
-          <span class="example-change__range"></span>
-          <button class="example-change__state">Стало</button>
+        <div class="slider">
+          <input class="visually-hidden slider__input slider__input--before" type="radio" name="toggle" id="before" checked>
+          <input class="visually-hidden slider__input slider__input--after" type="radio" name="toggle" id="after">
+          <div class="slider-controls">
+            <label for="before" class="slider-controls__label slider-controls__label--before">
+              Было
+            </label>
+            <input class="slider-controls__range" type="range" min="0" max="100" value="1">
+            <label for="after" class="slider-controls__label slider-controls__label--after">
+              Стало
+            </label>
+          </div>
+          <ul class="slider-list">
+            <li class="slider-item slider-item--before">
+              <picture>
+                <source type="image/webp" media="(min-width: 1300px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
+                <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@1x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@1x.png 2x">
+                <img class="slider-item__image" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" width="311" height="232" alt="Фото кота до">
+              </picture>
+            </li>
+            <li class="slider-item slider-item--after">
+              <picture>
+                <source type="image/webp" media="(min-width: 1300px)" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
+                <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@1x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@1x.png 2x">
+                <img class="slider-item__image" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" width="311" height="232" alt="Фото кота до">
+              </picture>
+            </li>
+          </ul>
         </div>
       </section>
     </main>

@@ -1,0 +1,21 @@
+.slider {
+  position: relative;
+  padding-bottom: 88px;
+}
+
+.slider__input--before:checked ~ .slider-list .slider-item--before,
+.slider__input--after:checked ~ .slider-list .slider-item--after  {
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .slider {
+    padding-bottom: 0;
+  }
+
+  .slider__input--before:focus ~ .slider-controls .slider-controls__label--before,
+  .slider__input--after:focus ~ .slider-controls .slider-controls__label--after {
+    border: none;
+  }
+}
+

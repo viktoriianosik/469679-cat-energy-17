@@ -1,0 +1,189 @@
+.slider-controls {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 248px;
+  left: 44px;
+}
+
+.slider-controls__label {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.slider-controls__range {
+  position: relative;
+  appearance: none;
+  width: 82px;
+  height: 12px;
+  margin: 0 18px;
+  padding: 0;
+  background-color: #ffffff;
+  border: 1px solid $grey-border;
+  border-radius: 6px;
+
+  &::-webkit-slider-thumb {
+    appearance: none;
+    width: 35px;
+    height: 6px;
+    margin-left: 6px;
+    background-color: $green;
+    border-radius: 3px;
+  }
+}
+
+.slider-controls__range::-moz-range-track {
+  position: relative;
+  appearance: none;
+  width: 82px;
+  height: 12px;
+  margin: 0 18px;
+  background-color: #ffffff;
+  border: 1px solid $grey-border;
+  border-radius: 6px;
+}
+
+.slider-controls__range::-moz-range-thumb {
+  width: 35px;
+  height: 6px;
+  margin-left: 6px;
+  background-color: $green;
+  border-radius: 3px;
+  border: none;
+}
+
+.slider-controls__range::-ms-track {
+  position: relative;
+  background: transparent;
+  width: 82px;
+  height: 12px;
+  margin: 0 18px;
+  background-color: #ffffff;
+  border: 1px solid $grey-border;
+  border-radius: 6px;
+}
+
+.slider-controls__range::-ms-thumb{
+  width: 35px;
+  height: 6px;
+  margin-left: 6px;
+  background-color: $green;
+  border-radius: 3px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .slider-controls {
+    top: 360px;
+    left: 99px;
+  }
+
+  .slider-controls__label {
+    font-size: 20px;
+    padding-bottom: 6px;
+    border-bottom: 1px dashed #b8b8b8;
+
+    &:hover {
+      border-bottom: 1px solid #989898;
+    }
+  }
+
+  .slider-controls__range {
+    position: relative;
+    appearance: none;
+    width: 428px;
+    height: 6px;
+    background-color: #dcdcdc;
+    border-radius: 2.5px;
+    outline: none;
+
+    &::-webkit-slider-thumb {
+      width: 34px;
+      height: 34px;
+      background: url(../../img/slider-control.png) no-repeat 0 0;
+      border-radius: 50%;
+      background-size: contain;
+      cursor: pointer;
+    }
+
+    &:hover::-webkit-slider-thumb {
+      background-image: url("../../img/slider-control-hover.png")
+    }
+
+    &:focus::-webkit-slider-thumb {
+      background-image: url("../../img/slider-control-focus.png")
+    }
+  }
+
+  .slider-controls__range::-moz-range-track {
+    appearance: none;
+    width: 428px;
+    height: 6px;
+    background-color: #dcdcdc;
+    border-radius: 2.5px;
+    outline: none;
+  }
+
+  .slider-controls__range::-moz-range-thumb {
+    width: 34px;
+    height: 34px;
+    background: url(../../img/slider-control.png) no-repeat 0 0;
+    border-radius: 50%;
+    background-size: contain;
+    border: none;
+    cursor: pointer;
+  }
+
+  .slider-controls__range:hover::-moz-range-thumb {
+    background-image: url("../../img/slider-control-hover.png");
+  }
+
+  .slider-controls__range:focus::-moz-range-thumb {
+    background-image: url("../../img/slider-control-focus.png");
+    outline: none;
+  }
+
+  .slider-controls__range::-ms-track {
+    width: 428px;
+    height: 6px;
+    border: none;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+  }
+
+  .slider-controls__range::-ms-fill-lower,
+  .slider-controls__range::-ms-fill-upper {
+    background-color: #dcdcdc;
+    border-radius: 2.5px;
+  }
+
+  .slider-controls__range::-ms-thumb {
+    width: 34px;
+    height: 34px;
+    background: url(../../img/slider-control.png) no-repeat 0 0;
+    border-radius: 50%;
+    background-size: contain;
+    border: none;
+    cursor: pointer;
+  }
+
+  .slider-controls__range:hover::-ms-thumb {
+    background-image: url("../../img/slider-control-hover.png");
+  }
+
+  .slider-controls__range:focus::-ms-thumb {
+    background-image: url("../../img/slider-control-focus.png");
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slider-controls {
+    top: 365px;
+    left: 40px;
+  }
+}
