@@ -1,7 +1,7 @@
 .footer {
   display: flex;
   flex-direction: column;
-  width: $mobile-width;
+  min-width: $mobile-width;
   margin: 0 auto;
   background-color: $grey;
 }
@@ -26,7 +26,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: $tablet-width;
+    min-width: $tablet-width;
   }
 
   .footer__logo-image {
@@ -38,6 +38,6 @@
 @media (min-width: $desktop-width) {
   .footer {
     position: relative;
-    width: $desktop-width;
+    min-width: $desktop-width;
   }
 }

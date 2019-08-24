@@ -4,9 +4,9 @@
 
 @media (min-width: $tablet-width) {
   .slider-item {
-    width: $tablet-width;
-    padding: 0 $tablet-padding 115px;
-    box-sizing: border-box;
+    width: 100%;
+    padding-bottom: 115px;
+    margin: 0 auto;
     text-align: center;
     background-color: $grey;
 
@@ -25,7 +25,8 @@
 
 @media (min-width: $desktop-width) {
   .slider-item {
-    width: 650px;
+    width: 100%;
     padding: 0 $desktop-padding 120px;
+    box-sizing: border-box;
   }
 }

@@ -7,13 +7,6 @@
   line-height: 14px;
   color: #ffffff;
   text-align: center;
-  background: url("../img/index-background-mobile@1x.jpg") no-repeat 0 0;
-  background-color: $green;
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background: url("../img/index-background-mobile@2x.jpg") no-repeat 0 0;
-    background-size: 320px auto;
-  }
 }
 
 .promo__title {

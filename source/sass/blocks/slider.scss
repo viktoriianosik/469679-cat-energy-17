@@ -1,15 +1,26 @@
 .slider {
   position: relative;
+  width: 280px;
   padding-bottom: 88px;
+  margin: 0 auto;
 }
 
 .slider__input--before:checked ~ .slider-list .slider-item--before,
-.slider__input--after:checked ~ .slider-list .slider-item--after  {
+.slider__input--after:checked ~ .slider-list .slider-item--after {
   display: block;
+}
+
+.slider__input--before:focus ~ .slider-controls .slider-controls__line::before {
+  width: 10px;
+}
+
+.slider__input--after:focus ~ .slider-controls .slider-controls__line::before {
+  width: 70px;
 }
 
 @media (min-width: $tablet-width) {
   .slider {
+    min-width: 100%;
     padding-bottom: 0;
   }
 
@@ -19,3 +30,8 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .slider {
+    min-width: 50%;
+  }
+}

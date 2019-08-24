@@ -21,6 +21,15 @@
   border-color: #bababa;
 }
 
+.form-product__input:focus ~ .form-product__text {
+  color: rgba(34, 34, 34, 0.3);
+}
+
+.form-product__input:focus + .form-product__input-new {
+  border-color: #bababa;
+  opacity: 0.3;
+}
+
 .form-product__input:checked + .form-product__input-new::before {
   content: "";
   position: absolute;

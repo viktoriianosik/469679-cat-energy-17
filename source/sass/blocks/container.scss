@@ -1,12 +1,29 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 280px;
+  margin: 0 auto;
+
+  &--example {
+    display: block;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     align-items: center;
-    width: $tablet-width;
-    padding: 0 $tablet-padding;
-    box-sizing: border-box;
+    width: 708px;
+
+    &--example {
+      display: flex;
+    }
+
+    &--address {
+      width: $tablet-width;
+      padding: 63px 71px 60px;
+      box-sizing: border-box;
+    }
   }
 }
 
@@ -17,11 +34,20 @@
     box-sizing: border-box;
 
     &--example {
-      width: 650px;
-      padding: 74px $desktop-padding;
+      width: 50%;
+      padding: 0;
       background-color: $grey;
       flex-direction: column;
       align-items: flex-start;
+    }
+
+    &--address {
+      width: 405px;
+      padding: 0;
+    }
+
+    &--additionally {
+      padding: 0;
     }
   }
 }

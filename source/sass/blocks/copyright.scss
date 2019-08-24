@@ -1,5 +1,7 @@
 .copyright {
   position: relative;
+  width: 280px;
+  margin: 0 auto;
   padding: 18px $mobile-padding;
 }
 
@@ -11,6 +13,10 @@
   line-height: 16px;
   color: $light-black;
   text-align: left;
+
+  &:focus {
+    color: rgba(68, 68, 68, 0.3);
+  }
 
   &:hover .copyright__image,
   &:focus .copyright__image {
@@ -33,11 +39,12 @@
 @media (min-width: $tablet-width) {
   .copyright {
     width: 162px;
-    padding: 32px 0 53px;
+    padding: 0;
+    margin: 0;
   }
 
   .copyright__image {
-    top: 30px;
+    top: -5px;
     right: -10px;
   }
 }

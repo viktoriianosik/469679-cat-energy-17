@@ -1,12 +1,20 @@
 .additionally-list {
+  width: 280px;
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .additionally-list {
+    width: 708px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .additionally-list {
     width: 895px;
+    margin: 0;
     margin-bottom: 85px;
   }
 }

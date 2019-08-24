@@ -1,13 +1,14 @@
 .gift {
   position: relative;
+  width: 280px;
   min-height: 289px;
-  margin: 39px 0 35px;
+  margin: 39px auto 35px;
   font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
-  background: url("../img/gift-photo-mobile@1x.jpg") no-repeat 0 0;
-  background-color: $green;
+  background: url("../img/gift-photo-mobile@1x.jpg") no-repeat 50% 0;
+  background-color: #72b649;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background: url("../img/gift-photo-mobile@2x.jpg") no-repeat 0 0;
@@ -18,8 +19,8 @@
   &::before {
     content: "";
     position: absolute;
-    top: 65px;
-    left: 113px;
+    top: 23%;
+    left: 35%;
     width: 56px;
     height: 61px;
     background: url("../img/icon-gift.svg") no-repeat 0 0;
@@ -28,17 +29,17 @@
 
 .gift__text {
   width: 161px;
-  margin: 0;
+  margin: 0 auto;
   text-align: center;
   padding-top: 190px;
-  padding-left: 60px;
   white-space: pre-line;
 }
 
 @media (min-width: $tablet-width) {
   .gift {
+    width: 708px;
     min-height: 200px;
-    margin: 69px 0 75px;
+    margin: 69px auto 75px;
     background: url("../img/gift-photo-tablet@1x.jpg") no-repeat 0 0;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {

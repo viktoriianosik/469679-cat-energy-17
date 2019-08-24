@@ -1,8 +1,7 @@
 .additionally {
   position: relative;
-  width: $mobile-width;
+  min-width: $mobile-width;
   margin: 0 auto;
-  padding: 0 $mobile-padding;
   box-sizing: border-box;
 
   &::before {
@@ -10,7 +9,7 @@
     position: absolute;
     top: 42px;
     right: 0;
-    width: 100%;
+    width: 17%;
     height: 3px;
     background-color: $green;
     z-index: -1;
@@ -19,9 +18,8 @@
 
 .additionally__title {
   width: 226px;
-  padding: 30px $mobile-padding;
+  padding: 30px 0;
   margin: 0;
-  margin-left: -20px;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
@@ -36,21 +34,33 @@
 
 @media (min-width: $tablet-width) {
   .additionally {
-    width: $tablet-width;
-    padding: 0 $tablet-padding;
+    min-width: $tablet-width;
+    text-align: left;
 
     &::before {
+      width: 68%;
       top: 21px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 21px;
+      left: 0;
+      width: 4%;
+      height: 3px;
+      background-color: $green;
+      z-index: -1;
     }
   }
 
   .additionally__title {
-    width: 338px;
+    width: 340px;
     padding: 0 37px;
-    margin-left: 0;
     margin-bottom: 75px;
     font-size: 36px;
     line-height: 36px;
+    text-align: left;
     background-color: #ffffff;
   }
 
@@ -66,19 +76,21 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: $desktop-width;
-    padding: 0 $desktop-padding;
-    margin-top: -60px;
+    min-width: $desktop-width;
+    margin: -60px auto 0;
 
     &::before {
       top: 21px;
     }
+
+    &:after {
+      width: 0px;
+    }
   }
 
   .additionally__title {
-    width: 338px;
-    padding: 0 $desktop-padding;
-    margin-left: -40px;
+    padding: 0;
+    padding-right: 30px;
   }
 
   .additionally__order {
@@ -91,5 +103,12 @@
 
   .additionally__wrapper {
     width: 610px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .additionally::after {
+    width: 5.5%;
+    left: -2.7%;
   }
 }

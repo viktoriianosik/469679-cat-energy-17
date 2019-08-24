@@ -60,8 +60,11 @@
 
 @media (min-width: $desktop-width) {
   .example-result {
-    width: 368px;
+    width: 430px;
+    padding-left: $desktop-padding;
+    padding-right: 180px;
     margin-bottom: 60px;
+    margin-left: auto;
   }
 
   .example-result__text {

@@ -2,7 +2,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  width: $mobile-width;
+  min-width: $mobile-width;
   padding: 21px $mobile-padding 0;
   margin: 0 auto;
   box-sizing: border-box;
@@ -10,8 +10,8 @@
 }
 
 .example__title {
-  margin: 0;
-  margin-bottom: 21px;
+  width: 280px;
+  margin: 0 auto 21px;
   font-size: 36px;
   line-height: 60px;
   font-weight: 400;
@@ -41,15 +41,16 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    width: $tablet-width;
+    min-width: $tablet-width;
     padding: 0;
-    box-sizing: border-box;
     background-color: #ffffff;
+    border-top: 1px solid $grey-border;
   }
 
   .example__title {
-    width: 100%;
+    width: $tablet-width;
     padding: 41px $tablet-padding 0;
+    box-sizing: border-box;
     margin-bottom: 63px;
     font-size: 60px;
     font-weight: 400;
@@ -73,26 +74,29 @@
 
 @media (min-width: $desktop-width) {
   .example {
-    width: $desktop-width;
+    min-width: $desktop-width;
+    border-top: none;
   }
 
   .example__title {
-    width: 100%;
+    width: $desktop-width;
     padding: 17px $desktop-padding 72px;
-    margin: 0;
+    margin: 0 auto;
     background-color: #ffffff;
   }
 
   .example__text {
     width: 431px;
-    padding-bottom: 67px;
+    padding: 74px 180px 67px $desktop-padding;
     margin: 0;
+    margin-left: auto;
   }
 
   .example__cost {
     width: 430px;
     margin: 0;
-    padding: 0;
+    margin-left: auto;
+    padding: 0 180px 74px $desktop-padding;
     line-height: 20px;
     text-align: left;
   }

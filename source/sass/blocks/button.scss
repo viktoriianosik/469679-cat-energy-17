@@ -14,16 +14,21 @@
   }
 
   &:focus {
-    opacity: 0.3;
+    color: rgba(255, 255, 255, 0.3);
   }
 
   &--show {
+    margin: 0 auto;
     background-color: $grey;
   }
 
   &--show:hover,
   &--show:focus {
     background-color: $grey-hvr;
+  }
+
+  &--order {
+    margin: 0 auto;
   }
 }
 

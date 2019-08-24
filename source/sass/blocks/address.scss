@@ -1,7 +1,4 @@
 .address {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   width: 100%;
   padding: 30px $mobile-padding 25px;
   box-sizing: border-box;
@@ -33,10 +30,8 @@
 
 @media (min-width: $tablet-width) {
   .address {
-    width: 100%;
-    padding: 63px 71px 60px;
+    padding: 0;
   }
-
   .address__title {
     width: 155px;
     font-size: 20px;
