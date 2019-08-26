@@ -36,3 +36,13 @@
     margin-bottom: 10px;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .form-additionally__title {
+    padding-bottom: 67px;
+  }
+
+  .form-additionally .form-list {
+    padding: 0 40px;
+  }
+}

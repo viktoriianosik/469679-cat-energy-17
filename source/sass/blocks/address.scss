@@ -32,6 +32,7 @@
   .address {
     padding: 0;
   }
+
   .address__title {
     width: 155px;
     font-size: 20px;
@@ -52,14 +53,15 @@
 
 @media (min-width: $desktop-width) {
   .address {
-    position: absolute;
-    top: 95px;
     left: $desktop-padding;
     width: 570px;
-    padding: 70px 90px 60px 75px;
+    min-height: 200px;
+    padding: 65px 90px 60px 75px;
+    margin: -307px 0 107px 3%;
     box-sizing: border-box;
     background-color: #ffffff;
     z-index: 10;
+    order: 1;
   }
 
   .address__text {

@@ -2,7 +2,7 @@
   position: relative;
   width: $mobile-width - 2 * $mobile-padding;
   margin: 0 auto 20px;
-  padding: 30px $mobile-padding 20px;
+  padding: 30px $mobile-padding 18px;
   box-sizing: border-box;
   text-align: left;
   background-color: $grey;
@@ -49,6 +49,7 @@
   line-height: 37px;
   font-weight: 400;
   text-transform: uppercase;
+  word-wrap: break-word;
   color: $black;
 }
 
@@ -74,7 +75,8 @@
 
 .program__link {
   position: relative;
-  display: block;
+  display: inline-block;
+  max-width: 200px;
   padding-top: 20px;
   font-size: 16px;
   line-height: 16px;
@@ -85,7 +87,7 @@
     content: "";
     position: absolute;
     top: 22px;
-    right: 120px;
+    right: -38px;
     width: 25px;
     height: 12px;
     background: url("../img/icon-right-arrow-long.svg");
@@ -105,7 +107,7 @@
 @media (min-width: $tablet-width) {
   .program {
     width: 100%;
-    padding: 75px 0 63px 55px;
+    padding: 75px 0 60px 52px;
     box-sizing: border-box;
 
     &::after {
@@ -147,6 +149,7 @@
   }
 
   .program__title {
+    width: 370px;
     margin: 0;
     padding-bottom: 25px;
     padding-left: 0;
@@ -169,9 +172,7 @@
   }
 
   .program__link {
-    position: relative;
-    display: block;
-    padding-top: 20px;
+    max-width: 370px;
     font-size: 20px;
     line-height: 20px;
 
@@ -179,7 +180,7 @@
       content: "";
       position: absolute;
       top: 24px;
-      left: 130px;
+      right: -45px;
       width: 25px;
       height: 12px;
       background: url("../img/icon-right-arrow-long.svg");
@@ -191,7 +192,7 @@
   .program {
     width: 570px;
     margin: 0;
-    padding-left: 50px;
+    padding-left: 54px;
 
     &::after {
       top: 47px;
@@ -232,6 +233,7 @@
   }
 
   .program__title {
+    width: 300px;
     margin: 0;
     padding-bottom: 75px;
     padding-left: 158px;

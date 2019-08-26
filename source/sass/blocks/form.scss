@@ -52,7 +52,9 @@
   }
 
   &:active {
-    border: 2px solid $light-black;
+    border: 1px solid $light-black;
+    outline: none;
+    box-shadow: none;
   }
 
   &:focus + .form-contact__mail,

@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   min-width: $mobile-width;
-  padding: 21px $mobile-padding 0;
+  padding: 18px $mobile-padding 0;
   margin: 0 auto;
   box-sizing: border-box;
   background-color: $grey;
@@ -28,7 +28,7 @@
 
 .example__cost {
   margin: 0;
-  margin-bottom: 44px;
+  margin-bottom: 38px;
   font-size: 14px;
   line-height: 20px;
   text-align: center;
@@ -65,7 +65,8 @@
 
   .example__cost {
     width: 192px;
-    margin-bottom: 255px;
+    padding-top: 7px;
+    margin-bottom: 250px;
     font-size: 20px;
     line-height: 30px;
     text-align: right;
@@ -80,7 +81,7 @@
 
   .example__title {
     width: $desktop-width;
-    padding: 17px $desktop-padding 72px;
+    padding: 17px 580px 72px $desktop-padding;
     margin: 0 auto;
     background-color: #ffffff;
   }
@@ -93,15 +94,18 @@
   }
 
   .example__cost {
-    width: 430px;
+    position: relative;
+    width: 180px;
     margin: 0;
     margin-left: auto;
-    padding: 0 180px 74px $desktop-padding;
+    padding: 0 430px 68px $desktop-padding;
     line-height: 20px;
     text-align: left;
   }
 
   .example__sum {
-    padding-left: 64px;
+    position: absolute;
+    top: 0;
+    left: 276px;
   }
 }

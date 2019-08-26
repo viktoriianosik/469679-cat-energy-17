@@ -39,7 +39,7 @@
   .gift {
     width: 708px;
     min-height: 200px;
-    margin: 69px auto 75px;
+    margin: 69px auto 72px;
     background: url("../img/gift-photo-tablet@1x.jpg") no-repeat 0 0;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -55,8 +55,8 @@
 
   .gift__text {
     text-align: left;
-    padding-top: 67px;
-    padding-left: 425px;
+    padding-top: 68px;
+    padding-left: 300px;
   }
 }
 
@@ -81,6 +81,6 @@
   .gift__text {
     text-align: center;
     padding-top: 190px;
-    padding-left: 45px;
+    padding-left: 0;
   }
 }

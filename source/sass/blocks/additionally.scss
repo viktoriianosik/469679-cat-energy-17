@@ -57,7 +57,7 @@
   .additionally__title {
     width: 340px;
     padding: 0 37px;
-    margin-bottom: 75px;
+    margin-bottom: 80px;
     font-size: 36px;
     line-height: 36px;
     text-align: left;
@@ -77,14 +77,14 @@
     flex-wrap: wrap;
     justify-content: space-between;
     min-width: $desktop-width;
-    margin: -60px auto 0;
+    margin: -68px auto 0;
 
     &::before {
       top: 21px;
     }
 
-    &:after {
-      width: 0px;
+    &::after {
+      width: 0;
     }
   }
 

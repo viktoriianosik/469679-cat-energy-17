@@ -3,14 +3,14 @@
   justify-content: center;
   align-items: center;
   width: 280px;
-  padding: 20px 0;
+  padding: 19px 0;
   margin: 0 auto;
   list-style: none;
   border-bottom: 1px solid $dark-grey;
 }
 
 .social__link {
-  padding-right: 40px;
+  padding-right: 30px;
   cursor: pointer;
 
   &:hover .social__logo,
@@ -42,7 +42,7 @@
   .social {
     width: 324px;
     margin: 0;
-    padding: 44px 0 62px;
+    padding: 63px 0 62px;
     border-bottom: none;
   }
 

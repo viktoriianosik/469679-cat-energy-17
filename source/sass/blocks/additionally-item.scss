@@ -35,7 +35,7 @@
 
 @media (min-width: $tablet-width) {
   .additionally-item {
-    padding: 26px 40px;
+    padding: 26px 36px;
     border-left: 1px solid $grey-border;
     border-right: 1px solid $grey-border;
   }
@@ -66,7 +66,7 @@
   .additionally-item {
     display: flex;
     justify-content: space-between;
-    padding: 16px 0;
+    padding: 14px 0;
     border-left: none;
     border-right: none;
   }
@@ -84,5 +84,6 @@
 
   .additionally-item__order {
     width: 245px;
+    margin-left: 40px;
   }
 }

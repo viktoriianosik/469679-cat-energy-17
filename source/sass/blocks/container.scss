@@ -17,11 +17,12 @@
 
     &--example {
       display: flex;
+      align-items: flex-start;
     }
 
     &--address {
       width: $tablet-width;
-      padding: 63px 71px 60px;
+      padding: 65px 71px 60px;
       box-sizing: border-box;
     }
   }
@@ -48,6 +49,10 @@
 
     &--additionally {
       padding: 0;
+    }
+
+    &--footer {
+      order: 2;
     }
   }
 }

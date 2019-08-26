@@ -5,7 +5,7 @@
 
 .all-products__plus {
   display: block;
-  margin: 25px auto 23px;
+  margin: 19px auto 23px;
   width: 31px;
   height: 31px;
   background: url("../img/icon-plus.svg") no-repeat 0 0;
@@ -44,6 +44,7 @@
 
 @media (min-width: $tablet-width) {
   .all-products {
+    position: relative;
     align-items: center;
     border: 1px solid $dark-grey;
     background-color: transparent;
@@ -70,6 +71,14 @@
     width: 250px;
     margin: auto;
     margin-bottom: 17px;
+  }
+
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .all-products__show-all {
+      position: absolute;
+      bottom: 17px;
+      left: 38px
+    }
   }
 }
 

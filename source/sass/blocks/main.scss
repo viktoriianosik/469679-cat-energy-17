@@ -16,14 +16,15 @@
   font-weight: 400;
   text-align: left;
   color: $black;
-
 }
 
 .main__text {
-  width: 230px;
+  width: $mobile-width;
   padding: 0 $mobile-padding 40px;
-  margin: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
   text-transform: uppercase;
+  white-space: pre-line;
 }
 
 @media (min-width: $tablet-width) {
@@ -45,7 +46,7 @@
   }
 
   .main__text {
-    width: 325px;
+    width: $tablet-width;
     padding: 0 70px 65px;
     font-size: 20px;
     line-height: 30px;
@@ -59,7 +60,7 @@
 
   .main__title {
     width: $desktop-width;
-    padding: 0 $desktop-padding 163px;
+    padding: 0 $desktop-padding 167px;
     box-sizing: border-box;
 
     &--padding {
@@ -68,6 +69,7 @@
   }
 
   .main__text {
+    width: $desktop-width;
     padding: 0 $desktop-padding 65px;
   }
 }
